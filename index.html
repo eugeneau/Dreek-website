@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Cave Jumper</title>
+<title>Tiger Run</title>
 <div style="text-align: center">
-<p>CAVE JUMPER</p>
+<p>TIGER RUN</p>
        <script>
-        var madeUpCreatures = "You are now playing this game.";
-        alert(madeUpCreatures);
+        var play = "You are now playing this game.";
+        alert(play);
        </script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <style>
@@ -20,12 +20,12 @@ canvas {
 <script>
 
 var myGamePiece;
-var caveMan = myGamePiece="http://gameartpartnersimagehost.s3.amazonaws.com/wp-content/uploads/2016/03/CaveManBob2.png";
 var myObstacles = [];
 var myScore;
 
 function startGame() {
-    myGamePiece = new component(30, 30,"yellow", 10, 120);
+    myGamePiece = new component(30, 15,"orange", 10, 120);
+    myGamePiece = new component(13, 30,"black", 10, 120);
     myGamePiece.gravity = 0.05;
     myScore = new component("30px", "Consolas", "black", 280, 40, "text");
     myGameArea.start();
@@ -139,7 +139,7 @@ function accelerate(n) {
 </script>
 <br>
 <button onmousedown="accelerate(-0.2)" onmouseup="accelerate(0.05)">Jump</button>
-<p>Use the "Jump" button to go up.</p>
+<p>Use the "Jump" button.</p>
 <p>Can you beat the score 10000?</p>
 </body>
 </html>
