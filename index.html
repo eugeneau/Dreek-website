@@ -25,7 +25,7 @@ function startGame() {
 
     myGamePiece = new component(45, 15,"DarkOrange", 10, 120,);
     myGamePiece = new component(10, 15,"DarkOrange", 10, 120,);
-    myGamePiece = new component(10, 15,"DarkOrange", 40, 120,);
+    myGamePiece = new component(10, 15,"Black", 40, 120,);
     myGamePiece.gravity = 0.05;
     myScore = new component("30px", "Calibri", "black", 280, 40, "text");
     myGameArea.start();
@@ -135,9 +135,8 @@ function accelerate(n) {
     myGamePiece.gravity = n;
 }
 </script>
-<br>
-<button onmousedown="accelerate(-0.2)" onmouseup="accelerate(0.05)">Jump</button>
-<p>This tiger has gotten lost in a cave. Use the "Jump" button to jump through the obstacles.</p>
+<button onmousedown="accelerate(-0.2)" onmouseup="accelerate(0.05)">Fly</button>
+<p>This tiger has gotten lost in a cave and has found a pair of wings. Use the "Fly" button to jump through the obstacles.</p>
 <p>Can you beat the score 10000?</p>
 </body>
 </html>
