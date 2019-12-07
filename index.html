@@ -2,7 +2,6 @@
 <html>
 <head>
 <title>Tiger Jump</title>
-<div style="text-align: center">
 <p>TIGER JUMP</p>
        <script>
         var play = "Play Tiger Jump.";
@@ -18,18 +17,17 @@ canvas {
 </head>
 <body onload="startGame()">
 <script>
-
 var myGamePiece;
 var myObstacles = [];
 var myScore;
 
 function startGame() {
 
-    myGamePiece = new component(45, 15,"orange", 10, 120,);
-    myGamePiece = new component(10, 15,"orange", 10, 120,);
-    myGamePiece = new component(10, 15,"orange", 40, 120,);
+    myGamePiece = new component(45, 15,"DarkOrange", 10, 120,);
+    myGamePiece = new component(10, 15,"DarkOrange", 10, 120,);
+    myGamePiece = new component(10, 15,"DarkOrange", 40, 120,);
     myGamePiece.gravity = 0.05;
-    myScore = new component("30px", "Consolas", "black", 280, 40, "text");
+    myScore = new component("30px", "Calibri", "black", 280, 40, "text");
     myGameArea.start();
 }
 
