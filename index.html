@@ -23,7 +23,7 @@ var myScore;
 
 function startGame() {
 
-    myGamePiece = new component(45, 15,"DarkOrange", 10, 120, "image");
+    myGamePiece = new component(30, 30,"AliceBlue", 10, 120, "image");
     myGamePiece.gravity = 0.05;
     myScore = new component("30px", "Calibri", "black", 280, 40, "text");
     myGameArea.start();
@@ -133,7 +133,7 @@ function accelerate(n) {
     myGamePiece.gravity = n;
 }
 </script>
-<button onmousedown="accelerate(-0.2)" onmouseup="accelerate(0.05)">Fly</button>
+<button onmousedown="accelerate(-0.2)" onmouseup="accelerate(0.01)">Fly</button>
 <p>This tiger has gotten lost in a cave and has found a pair of wings. Use the "Fly" button to jump through the obstacles.</p>
 <p>Can you beat the score 10000?</p>
 </body>
