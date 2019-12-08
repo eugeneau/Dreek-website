@@ -45,11 +45,6 @@ var myGameArea = {
 }
 
 function component(width, height, color, x, y, type) {
-  this.type = type;
-  if (type == "image") {
-    this.image = new Image();
-    this.image.src = color;
-  }
     this.type = type;
     this.score = 0;
     this.width = width;
