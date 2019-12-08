@@ -10,7 +10,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <style>
 canvas {
-    border:1px solid black;
+    border:1px solid #b4b4b4;
     background-color: gray;
 }
 </style>
@@ -24,7 +24,7 @@ var myScore;
 function startGame() {
 
     myGamePiece = new component(45, 30,"Orange", 10, 120);
-    myGamePiece.gravity = 0.05;
+    myGamePiece.gravity = 0.06;
     myScore = new component("30px", "Calibri", "black", 280, 40, "text");
     myGameArea.start();
 }
