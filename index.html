@@ -23,7 +23,8 @@ var myScore;
 
 function startGame() {
 
-    myGamePiece = new component(35, 20,"Orange", 10, 120);
+    myGamePiece = new component(35, 15,"Orange", 10, 120);
+    myGamePiece = new component(10, 15,"Orange", 10, 105);
     myGamePiece.gravity = 0.06;
     myScore = new component("30px", "Calibri", "black", 280, 40, "text");
     myGameArea.start();
