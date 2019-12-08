@@ -19,13 +19,11 @@ canvas {
 <script>
 var myGamePiece;
 var myObstacles = [];
-var myScore;
 
 function startGame() {
 
     myGamePiece = new component(30, 30,"https://i.postimg.cc/rm8NQW9R/tigeridle.png", 10, 120, "image"); 
     myGamePiece.gravity = 0.06;
-    myScore = new component("30px", "Calibri", "black", 280, 40, "text");
     myGameArea.start();
 }
 
@@ -63,28 +61,6 @@ function component(width, height, color, x, y, type) {
                 this.x, 
                 this.y,
                 this.width, this.height);
-        } else {
-            ctx.fillStyle = color;
-            ctx.fillRect(this.x, this.y, this.width, this.height);
-        }
-    }
-function component(width, height, color, x, y, type) {
-    this.type = type;
-    this.score = 0;
-    this.width = width;
-    this.height = height;
-    this.speedX = 0;
-    this.speedY = 0;    
-    this.x = x;
-    this.y = y;
-    this.gravity = 0;
-    this.gravitySpeed = 0;
-    this.update = function() {
-        ctx = myGameArea.context;
-        if (this.type == "text") {
-            ctx.font = this.width + " " + this.height;
-            ctx.fillStyle = color;
-            ctx.fillText(this.text, this.x, this.y);
         } else {
             ctx.fillStyle = color;
             ctx.fillRect(this.x, this.y, this.width, this.height);
@@ -144,8 +120,6 @@ function updateGameArea() {
         myObstacles[i].x += -1;
         myObstacles[i].update();
     }
-    myScore.text="SCORE: " + myGameArea.frameNo;
-    myScore.update();
     myGamePiece.newPos();
     myGamePiece.update();
 }
@@ -159,6 +133,5 @@ function accelerate(n) {
 </script>
 <button onmousedown="accelerate(-0.3)" onmouseup="accelerate(0.03)">Fly</button>
 <p>This tiger has gotten lost in a cave and has found a jetpack. Use the "Fly" button to jump through the obstacles.</p>
-<p>Can you beat the score 10000?</p>
 </body>
 </html>
