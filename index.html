@@ -23,7 +23,7 @@ var myScore;
 
 function startGame() {
 
-    myGamePiece = new component(45, 30,"https://www.freepngimg.com/thumb/tiger/75640-tiger-black-cartoon-illustration-panther-free-clipart-hq.png", 10, 120, "image");
+    myGamePiece = new component(45, 30,"Orange", 10, 120);
     myGamePiece.gravity = 0.05;
     myScore = new component("30px", "Calibri", "black", 280, 40, "text");
     myGameArea.start();
@@ -56,7 +56,7 @@ function component(width, height, color, x, y, type) {
     this.gravity = 0;
     this.gravitySpeed = 0;
     this.update = function() {
-        ctx = myGameArea.context;           
+        ctx = myGameArea.context;
         if (this.type == "text") {
             ctx.font = this.width + " " + this.height;
             ctx.fillStyle = color;
