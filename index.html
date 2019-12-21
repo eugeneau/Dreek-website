@@ -22,9 +22,9 @@ var myObstacles = [];
 var myScore;
 
 function startGame() {
-    myGamePiece = new component(30, 30,"orange", 10, 120);
+    myGamePiece = new component(30, 30,"orange", 10, 120, "image");
     myGamePiece.gravity = 0.05;
-    myScore = new component("30px", "Consolas", "black", 280, 40, "text");
+    myScore = new text("30px", "Consolas", "black", 280, 40, "text");
     myGameArea.start();
 }
 
@@ -43,7 +43,7 @@ var myGameArea = {
     }
 }
 
-function component(width, height, color, x, y, type) {
+function text(width, height, color, x, y, type) {
     this.type = type;
     this.score = 0;
     this.width = width;
@@ -61,8 +61,10 @@ function component(width, height, color, x, y, type) {
             ctx.fillStyle = color;
             ctx.fillText(this.text, this.x, this.y);
         } else {
-            ctx.fillStyle = color;
-            ctx.fillRect(this.x, this.y, this.width, this.height);
+            ctx.drawImage(this.image;
+              this.x,
+              this.y,
+              this.width, this.height); 
         }
     }
     this.newPos = function() {
