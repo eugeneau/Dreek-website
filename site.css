@@ -1,9 +1,15 @@
 body {
-  background-color: lightblue;
+  background: url('site.png');
+  background-size: cover;
   text-align: center;
 }
 
 h1 {
   color: blue;
   text-align: center;
+}
+
+heading {
+  color: blue;
+  font-size: 30px;
 }
