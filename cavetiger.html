@@ -9,7 +9,7 @@
        </script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <style>
-board {
+canvas {
     background: url('site.png');
 }
 </style>
@@ -38,7 +38,7 @@ function startGame() {
 }
 
 var myGameArea = {
-    board : document.createElement("board"),
+    canvas : document.createElement("canvas"),
     start : function() {
         this.canvas.width = 480;
         this.canvas.height = 270;
