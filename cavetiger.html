@@ -9,7 +9,7 @@
        </script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <style>
-canvas {
+board {
     background: url('site.png');
 }
 </style>
@@ -38,7 +38,7 @@ function startGame() {
 }
 
 var myGameArea = {
-    canvas : document.createElement("canvas"),
+    board : document.createElement("board"),
     start : function() {
         this.canvas.width = 480;
         this.canvas.height = 270;
@@ -126,7 +126,7 @@ function updateGameArea() {
         maxGap = 200;
         gap = Math.floor(Math.random()*(maxGap-minGap+1)+minGap);
         myObstacles.push(new component(10, height, "stalactite.png", x, 0));
-        myObstacles.push(new component(10, x - height - gap, "#stalagmite.png", x, height + gap));
+        myObstacles.push(new component(10, x - height - gap, "stalagmite.png", x, height + gap));
     }
     for (i = 0; i < myObstacles.length; i += 1) {
         myObstacles[i].x += -1;
