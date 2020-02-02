@@ -1,7 +1,8 @@
-body {
+html {
   background: url('site.png');
   background-size: 16px;
   text-align: center;
+  font-family: "Minecraft";
 }
 
 h1 {
