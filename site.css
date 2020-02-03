@@ -3,6 +3,7 @@ html {
   background-size: 16px;
   text-align: center;
   font-family: "minecraft";
+  src: url('minecraft.ttf') format('ttf'),
 }
 
 h1 {
