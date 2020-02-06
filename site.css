@@ -2,11 +2,11 @@ html {
   background: url('site.png');
   background-size: 16px;
   text-align: center;
-  font-family: "minecraft";
-  src: url('minecraft.ttf') format('ttf'),
 }
 
 h1 {
   color: white;
   text-align: center;
+  font-family: "minecraft";
+  src: url('minecraft.ttf') format('ttf'),
 }
