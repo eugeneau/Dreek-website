@@ -5,6 +5,6 @@ RewriteRule ^(.*)$ $1.html [NC,L]
 <Files secret.html>
 AuthName "Dialog prompt"
 AuthType Basic
-AuthUserFile /.com/.htpasswd
+AuthUserFile /dreek16designer.com/.htpasswd
 Require valid-user
 </Files>
