@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Password</title>
+ <style>
+  body {
+   background: url('site.png');
+   background-size: 16px;
+   padding: 30px;
+  }
+ </style>
+ <script>
+  function checkPassword() {
+   var password = document.getElementById("passwordBox");
+   var passwordText = password.value;
+   if(passwordText == "gogoyoyofroyo87") {
+    return true;
+   }
+   alert("Incorrect password!");
+   return false;
+   }
+ </script>
+</head>
+<body>
+ <p style="font-size: 30pt;">Hudson</p>
+ <p>Please enter the password to get early access.</p>
+ <p>Password:<input id="passwordBox" type="password"/></p>
+ <a href="secret" onclick="return checkPassword();">
+  Click here to submit password
+ </a>
+</body>
+</html>
