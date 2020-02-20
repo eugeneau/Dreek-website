@@ -1,0 +1,27 @@
+html {
+  background: url('site.png');
+  background-size: 16px;
+  text-align: center;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  font-family: "minecraft";
+  src: url('minecraft.ttf') format('ttf'),
+}
+
+a:link, a:visited {
+  background: url('button.png');
+  background-size: 16px;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background: url('active.png');
+  background-size: 16px;
+}
