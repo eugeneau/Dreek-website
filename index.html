@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <nav>
-<img src="me.png" onclick="window.location.href = 'index';"> |
-<h3 onclick="window.location.href = 'videos';"> Videos</h3> |
-<h3 onclick="window.location.href = 'addons';"> Addons</h3> |
-<h3 onclick="window.location.href = 'games';"> Games</h3>
+<img src="me.png" onclick="window.location.href = 'index';"> |<h3 onclick="window.location.href = 'videos';"> Videos</h3> |<h3 onclick="window.location.href = 'addons';"> Addons</h3> |<h3 onclick="window.location.href = 'games';"> Games</h3>
 </nav>
 <style>
-a:link, a:visited {
+nav {
   background: url('button.png');
   background-size: 16px;
   color: white;
@@ -15,11 +13,7 @@ a:link, a:visited {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-}
-
-a:hover, a:active {
-  background: url('active.png');
-  background-size: 16px;
+  font-family: sans-serif;
 }
 </style>
 <title>WELCOME</title>
@@ -28,6 +22,5 @@ a:hover, a:active {
 <br>
 <br>
 <br>
-<button onclick="window.location.href = 'login';">Early Access</button>
 <body>
 </head>
