@@ -2,9 +2,9 @@ RewriteEngine on
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.html -f
 RewriteRule ^(.*)$ $1.html [NC,L]
-<Files secret.html>
+<Files note>
 AuthName "Dialog prompt"
 AuthType Basic
-AuthUserFile /dreek16designer.com/.htpasswd
+AuthUserFile .htpasswd
 Require valid-user
 </Files>
