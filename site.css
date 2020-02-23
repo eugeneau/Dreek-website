@@ -2,13 +2,12 @@ html {
   background: url('site.png');
   background-size: 16px;
   text-align: center;
+  border: 4px solid red;
+  font-family: "AR-DESTINE";
 }
 
 h1 {
   color: white;
-  text-align: center;
-  font-family: "minecraft";
-  src: url('minecraft.ttf') format('ttf'),
 }
 
 a:link, a:visited {
@@ -27,7 +26,7 @@ a:hover, a:active {
 }
 
 nav {
-  background: url('button.png');
+  background: url('nav.png');
   background-size: 16px;
   color: white;
   padding: 15px 25px;
