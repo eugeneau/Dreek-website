@@ -25,3 +25,14 @@ a:hover, a:active {
   background: url('active.png');
   background-size: 16px;
 }
+
+nav {
+  background: url('button.png');
+  background-size: 16px;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-family: sans-serif;
+}
