@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html style="text-align: center;">
 <head>
 <title>Rise of the Goomba-Chickens</title>
 </head>
 <body>
-    <h4>GOOMBAS REPLACE CHICKENS</h4>
+    <h1>GOOMBAS REPLACE CHICKENS</h1>
     <canvas id="game" width="640" height="480"></canvas>
     <script>
         var canvas = document.getElementById("game");
@@ -80,7 +80,7 @@
                 this.moveFloor();
             },
             draw: function() {
-                ctx.fillStyle = "cyan";
+                ctx.fillStyle = "lightblue";
                 ctx.fillRect (0, 0, this.width, this.height);
                 for(index in this.floorTiles) {
                     var tile = this.floorTiles[index];
@@ -88,7 +88,7 @@
                     ctx.fillStyle = "indigo";
                     ctx.fillRect(tile.x, y, tile.width, tile.height);
                 }
-                ctx.fillStyle = "white";
+                ctx.fillStyle = "black";
                 ctx.font = "28px Arial";
                 ctx.fillText("Speed: " + this.speed, 10, 40);
                 ctx.fillText("Travelled: " + this.distanceTravelled, 10, 75);
@@ -139,7 +139,7 @@
                 this.applyGravity();
             },
             draw: function() {
-                ctx.fillStyle = "mediumvioletred";
+                ctx.fillStyle = "red";
                 ctx.fillRect(player.x, player.y - player.height, this.height, this.width);
             }
         };
