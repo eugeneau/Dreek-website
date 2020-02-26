@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html style="text-align: center;">
 <head>
+<img id="player" src="assets/steve.gif">
 <title>Rise of the Goomba-Chickens</title>
 </head>
 <body>
@@ -9,6 +10,7 @@
     <script>
         var canvas = document.getElementById("game");
         var ctx = canvas.getContext("2d");
+        var player = document.getElementById("player");
         function floor(x, height) {
             this.x = x;
             this.width = 700;
@@ -97,7 +99,7 @@
         var player = {
             x: 160,
             y: 340,
-            height: 20,
+            height: 60,
             width: 20,
             downwardForce: world.gravity,
             jumpHeight: 0,
@@ -139,7 +141,7 @@
                 this.applyGravity();
             },
             draw: function() {
-                ctx.fillStyle = "red";
+                ctx.drawImage = "player";
                 ctx.fillRect(player.x, player.y - player.height, this.height, this.width);
             }
         };
