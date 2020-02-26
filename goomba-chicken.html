@@ -42,7 +42,7 @@
                     return;
                 }
                 var previousTile = this.floorTiles[this.floorTiles.length - 1];
-                var biggestJumpableHeight = previousTile.height + player.height * 3.5;
+                var biggestJumpableHeight = previousTile.height + player.height * 4;
                 if(biggestJumpableHeight > this.highestFloor) {
                     biggestJumpableHeight = this.highestFloor;
                 }
@@ -85,7 +85,7 @@
                 for(index in this.floorTiles) {
                     var tile = this.floorTiles[index];
                     var y = world.height - tile.height;
-                    ctx.fillStyle = "indigo";
+                    ctx.fillStyle = "green";
                     ctx.fillRect(tile.x, y, tile.width, tile.height);
                 }
                 ctx.fillStyle = "black";
