@@ -72,7 +72,7 @@ function component(width, height, color, x, y, type) {
             ctx.fillStyle = color;
             ctx.fillText(this.text, this.x, this.y);
         } else if (this.type == "image") {
-            ctx.drawImage(truck, this.x, this.y, this.width, this.height);
+            ctx.drawImage(car, this.x, this.y, this.width, this.height);
         } else {
             ctx.fillStyle = color;
             ctx.fillRect(this.x, this.y, this.width, this.height);
@@ -85,8 +85,8 @@ function updateGameArea() {
     myGamePiece.speed = 0;
     if (myGameArea.keys && myGameArea.keys[37]) {myGamePiece.moveAngle = -1; }
     if (myGameArea.keys && myGameArea.keys[39]) {myGamePiece.moveAngle = 1; }
-    if (myGameArea.keys && myGameArea.keys[38]) {myGamePiece.speed= 1; }
-    if (myGameArea.keys && myGameArea.keys[40]) {myGamePiece.speed= -1; }
+    if (myGameArea.keys && myGameArea.keys[38]) {myGamePiece.speed= 3; }
+    if (myGameArea.keys && myGameArea.keys[40]) {myGamePiece.speed= -2; }
     myGamePiece.newPos();
     myGamePiece.update();
 }
