@@ -9,9 +9,9 @@
   }
 
   body {
-    background: black;
+    background: url('active .png');
     display: flex;
-    align-items: center;
+    text-align: center;
     justify-content: center;
   }
   canvas {
@@ -24,6 +24,7 @@
 <script>
 var canvas = document.getElementById('game');
 var context = canvas.getContext('2d');
+var choco = document.getElementById('choco');
 
 var grid = 16;
 var count = 0;
@@ -47,13 +48,10 @@ var apple = {
   y: 320
 };
 
-// get random whole numbers in a specific range
-// @see https://stackoverflow.com/a/1527820/2124254
 function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min)) + min;
 }
 
-// game loop
 function loop() {
   requestAnimationFrame(loop);
 
@@ -94,7 +92,7 @@ function loop() {
   }
 
   // draw apple
-  context.fillStyle = 'purple';
+  context.drawImage = 'choco';
   context.fillRect(apple.x, apple.y, grid-1, grid-1);
 
   // draw snake one cell at a time
@@ -165,5 +163,6 @@ document.addEventListener('keydown', function(e) {
 requestAnimationFrame(loop);
 </script>
 <p style="color: white;">EAT THE PURPLE CHOCOLATE</p>
+<img src="assets/choco.png" id="choco">
 </body>
 </html>
