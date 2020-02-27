@@ -142,7 +142,6 @@
             },
             draw: function() {
                 ctx.drawImage = "player";
-                ctx.fillRect(player.x, player.y - player.height, this.height, this.width);
             }
         };
         window.addEventListener("keypress", function(keyInfo) { player.keyPress(keyInfo); }, false);
