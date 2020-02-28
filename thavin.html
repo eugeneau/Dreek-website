@@ -21,6 +21,7 @@
    var password = document.getElementById("passwordBox");
    var passwordText = password.value;
    if(passwordText == "happybova") {
+    window.location.href = 'secret';
     return true;
    }
    alert("Incorrect password!");
@@ -29,11 +30,10 @@
  </script>
 </head>
 <body>
- <p style="font-size: 30pt;">PANDA</p>
- <p>Please enter the password to get early access.</p>
- <p>Password:<input id="passwordBox" type="password"/></p>
- <h3 onclick="window.location.href = 'secret';">Submit</h3>
+ <p style="font-size: 30pt;">PANDA LOGIN</p>
+ <p>Please enter the password to view this website.</p>
+ <p>Password:<input type="password" id="passwordBox"></p>
+ <h3 onclick="checkPassword();">Submit</h3>
   Click here to submit password
  </a>
 </body>
-</html>
