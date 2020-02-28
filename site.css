@@ -11,6 +11,8 @@ h1 {
 }
 
 a:link, a:visited {
+  background: url('https://dreek16designer.com/button.png');
+  background-size: 16px;
   color: white;
   padding: 15px 25px;
   text-align: center;
@@ -19,6 +21,11 @@ a:link, a:visited {
 }
 
 a:hover, a:active {
+  background: url('https://dreek16designer.com/active.png');
+  background-size: 16px;
+}
+
+.settings {
   color: white;
   padding: 15px 25px;
   text-align: center;
