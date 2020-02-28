@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <title>snake</title>
+  <style>
+ 
+  body {
+    background:blue;
+        }
+  canvas {
+    border:3px solid;
+    background:#efe;
+  }
+  
+  .control {
+  position:relative;
+  border-radius:10px;
+  width:70px;
+  height:30px;
+  bottom:-30px;
+  }
+  
+  button {
+  outline:0;
+  }
+  </style>
+</head>
+<body onselectstart="return false" onpaste="return false;" onCopy="return false" onCut="return false" onDrag="return false" onDrop="return false" oncontextmenu="return false">
+
+<canvas width="340" height="340" id="game"></canvas>
+<script>
+var canvas = document.getElementById('game');
+var context = canvas.getContext('2d');
+var grid = 10;
+var colors = "rgb("
+    +Math.floor(Math.random() * 226)
+    +","
+    +Math.floor(Math.random() * 226)
+    +","
+    +Math.floor(Math.random() * 226)
+    +")";
+
+var snake = {
+  x: 160,
+  y: 160,
+  dx: grid,
+  dy: 0,
+  cells: [],
+  maxCells: 4
+};
+var count = 0;
+var apple = {
+  x: 320,
+  y: 320
+};
+function getRandomInt(min, max) {
+  return Math.floor(Math.random() * (max - min)) + min;
+}
+
+function loop() {
+  requestAnimationFrame(loop);
+ 
+  if (++count < 7) {
+    return;
+  }
+  count = 0;
+  context.clearRect(0,0,canvas.width,canvas.height);
+  snake.x += snake.dx;
+  snake.y += snake.dy;
+  // wrap snake position on edge of screen
+  if (snake.x < 0) {
+    snake.x = canvas.width - grid;
+  }
+  else if (snake.x >= canvas.width) {
+    snake.x = 0;
+  }
+  if (snake.y < 0) {
+    snake.y = canvas.height - grid;
+  }
+  else if (snake.y >= canvas.height) {
+    snake.y = 0;
+  }
+ 
+  snake.cells.unshift({x: snake.x, y: snake.y});
+  
+  if (snake.cells.length > snake.maxCells) {
+    snake.cells.pop();
+  }
+
+  context.fillStyle = 'purple';
+  context.fillRect(apple.x, apple.y, grid-1, grid-1)
+
+  context.fillStyle = colors;
+  snake.cells.forEach(function(cell, index) {
+    context.fillRect(cell.x, cell.y, grid-1, grid-1);
+  
+    if (cell.x === apple.x && cell.y === apple.y) {
+      snake.maxCells++;
+
+      apple.x = getRandomInt(0, 30) * grid;
+      apple.y = getRandomInt(0, 30) * grid;
+    }
+
+
+    for (var i = index + 1; i < snake.cells.length; i++) {
+  
+  
+      if (cell.x === snake.cells[i].x && cell.y === snake.cells[i].y) {
+        alert("you lose, your score is")
+        alert(snake.maxCells)
+        colors = "rgb("
+    +Math.floor(Math.random() * 226)
+    +","
+    +Math.floor(Math.random() * 226)
+    +","
+    +Math.floor(Math.random() * 226)
+    +")";
+        snake.x = 160;
+        snake.y = 160;
+        snake.cells = [];
+        snake.maxCells = 4;
+        snake.dx = grid;
+        snake.dy = 0;
+        apple.x = getRandomInt(0, 25) * grid;
+        apple.y = getRandomInt(0, 25) * grid;
+      }
+    }
+  });
+}
+
+  function left(){
+  if (snake.dx === 0) {
+    snake.dx = -grid;
+    snake.dy = 0;
+  }
+  }
+  function up(){
+  if ( snake.dy === 0) {
+    snake.dy = -grid;
+    snake.dx = 0;
+  }
+  }
+  function right(){
+  if ( snake.dx === 0) {
+    snake.dx = grid;
+    snake.dy = 0;
+  }
+  }
+  function down(){
+  if (snake.dy === 0) {
+    snake.dy = grid;
+    snake.dx = 0;
+  }
+  }
+  function hack(){
+  if (snake.maxCells){
+  snake.maxCells++;
+  }
+  }
+  function hackd(){
+  if (snake.maxCells){
+  colors = "rgb("
+    +Math.floor(Math.random() * 226)
+    +","
+    +Math.floor(Math.random() * 226)
+    +","
+    +Math.floor(Math.random() * 226)
+    +")";
+  }
+  }
+  function hacku(){
+  if (snake.maxCells){
+  apple.x = getRandomInt(0, 25) * grid;
+  apple.y = getRandomInt(0, 25) * grid;
+  }
+  }
+document.addEventListener('keydown', function(e) {
+  // prevent snake from backtracking on itself
+  if (e.which === 37 && snake.dx === 0) {
+    snake.dx = -grid;
+    snake.dy = 0;
+  }
+  else if (e.which === 38 && snake.dy === 0) {
+    snake.dy = -grid;
+    snake.dx = 0;
+  }
+  else if (e.which === 39 && snake.dx === 0) {
+    snake.dx = grid;
+    snake.dy = 0;
+  }
+  else if (e.which === 40 && snake.dy === 0) {
+    snake.dy = grid;
+    snake.dx = 0;
+  }
+requestAnimationFrame(loop);
+</script>
+<svg width="340px" height="200px">    
+    <circle cx="130px" Cy="80px" r="30" onclick="left()">
+    </circle>
+    <circle cx="175px" Cy="30px" r="30" onclick="up()">
+    </circle>
+    <circle cx="175px" Cy="125px" r="30" onclick="down()">
+    </circle>
+    <circle cx="220px" Cy="80px" r="30" onclick="right()">
+    </circle>
+    <circle cx="300px" Cy="75px" r="40" onclick="hack()">
+    </circle>
+    <circle cx=" 45px" Cy="75px" r="40" onclick="hackd()">
+    </circle>
+  <circle cx=" 0px" Cy="0px" r="40" onclick="hacku()">
+    </circle>
+</svg>
+</body>
+</html>
