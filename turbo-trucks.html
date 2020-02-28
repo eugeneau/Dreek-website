@@ -17,14 +17,14 @@ canvas {
 <h1>TURBOTRUCKS</h1>
 <img id="truck" width="64" height="64" src="assets/car.png">       
 </head>
-<body onload="startGame()">
+<body>
 <script>
 var myGamePiece;
 var car = document.getElementById("truck");
 var truck = "car.png";
 
 function startGame() {
-    myGamePiece = new component(30, 30, "truck", 225, 225, "image");
+    car = new component(30, 30, "truck", 225, 225, "image");
     myGameArea.start();
 }
 
@@ -91,4 +91,5 @@ function updateGameArea() {
 }
 </script>
 <hr>
+<button onclick="startGame()" value="Play">
 Use the arrow keys to drive.
