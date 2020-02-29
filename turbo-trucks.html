@@ -19,9 +19,7 @@ canvas {
 </head>
 <body onload="return startGame();">
 <script>
-var myGamePiece;
-var truck = document.getElementById("truck");
-
+var myGamePiece = document.getElementById("truck");
 var myGameArea = {
     canvas : document.createElement("canvas"),
     start : function() {
@@ -34,10 +32,10 @@ var myGameArea = {
             e.preventDefault();
             myGameArea.keys = (myGameArea.keys || []);
             myGameArea.keys[e.keyCode] = (e.type == "keydown");
-        })
+        });
         window.addEventListener('keyup', function (e) {
             myGameArea.keys[e.keyCode] = (e.type == "keydown");
-        })
+        });
     },
     stop : function() {
         clearInterval(this.interval);
@@ -46,13 +44,10 @@ var myGameArea = {
         this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
     }
 }
-
 function startGame() {
-    truck = new vehicle(30, 30, "truck", 225, 225, "image");
     myGamePiece = new vehicle(30, 30, "truck", 225, 225, "image");
     myGameArea.start();
 }
-
 function vehicle(width, height, color, x, y, type) {
     this.type = type;
     this.score = 0;
