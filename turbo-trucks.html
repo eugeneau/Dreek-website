@@ -62,7 +62,7 @@ function vehicle(width, height, color, x, y, type) {
     this.update = function() {
         ctx = myGameArea.context;
         if (this.type == "image") {
-            ctx.drawImage(truck, this.x, this.y, this.width, this.height);
+            ctx.drawImage(myGamePiece, this.x, this.y, this.width, this.height);
         }
     }
 }
