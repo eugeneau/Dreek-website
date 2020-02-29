@@ -20,12 +20,7 @@ canvas {
 <body onload="return startGame();">
 <script>
 var myGamePiece;
-var car = document.getElementById("truck");
-
-function startGame() {
-    car = new vehicle(30, 30, "car", 225, 225, "image");
-    myGameArea.start();
-}
+var truck = document.getElementById("truck");
 
 var myGameArea = {
     canvas : document.createElement("canvas"),
@@ -52,6 +47,12 @@ var myGameArea = {
     }
 }
 
+function startGame() {
+    truck = new vehicle(30, 30, "truck", 225, 225, "image");
+    myGamePiece = new vehicle(30, 30, "truck", 225, 225, "image");
+    myGameArea.start();
+}
+
 function vehicle(width, height, color, x, y, type) {
     this.type = type;
     this.score = 0;
@@ -66,11 +67,10 @@ function vehicle(width, height, color, x, y, type) {
     this.update = function() {
         ctx = myGameArea.context;
         if (this.type == "image") {
-            ctx.drawImage(car, this.x, this.y, this.width, this.height);
+            ctx.drawImage(truck, this.x, this.y, this.width, this.height);
         }
     }
 }
-
 function updateGameArea() {
     myGameArea.clear();
     myGamePiece.moveAngle = 0;
