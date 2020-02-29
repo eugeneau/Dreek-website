@@ -23,7 +23,7 @@ var myGamePiece;
 var car = document.getElementById("truck");
 
 function startGame() {
-    car = new component(30, 30, "car", 225, 225, "image");
+    car = new vehicle(30, 30, "car", 225, 225, "image");
     myGameArea.start();
 }
 
@@ -52,7 +52,7 @@ var myGameArea = {
     }
 }
 
-function component(width, height, color, x, y, type) {
+function vehicle(width, height, color, x, y, type) {
     this.type = type;
     this.score = 0;
     this.width = width;
@@ -65,17 +65,11 @@ function component(width, height, color, x, y, type) {
     this.gravitySpeed = 0;
     this.update = function() {
         ctx = myGameArea.context;
-        if (this.type == "text") {
-            ctx.font = this.width + " " + this.height;
-            ctx.fillStyle = color;
-            ctx.fillText(this.text, this.x, this.y);
-        } else if (this.type == "image") {
+        if (this.type == "image") {
             ctx.drawImage(car, this.x, this.y, this.width, this.height);
-        } else {
-            ctx.fillStyle = color;
-            ctx.fillRect(this.x, this.y, this.width, this.height);
         }
     }
+}
 
 function updateGameArea() {
     myGameArea.clear();
