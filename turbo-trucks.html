@@ -46,6 +46,7 @@ function vehicle(width, height, color, x, y, type) {
         ctx.drawImage(truck, this.x, this.y, this.width, this.height); 
     }
     this.newPos = function() {
+        ctx = myGameArea.context;
         this.angle += this.moveAngle * Math.PI / 180;
         this.x += this.speed * Math.sin(this.angle);
         this.y -= this.speed * Math.cos(this.angle);
