@@ -37,11 +37,15 @@ function startGame() {
     if (myGameArea.frameNo == 60000){
         alert("Password: Meetourz")
     }
+    if (myGameArea.frameNo == 5000){
+        alert("Congrats, you reached score 5000!")
+    }
     myMusic = new sound("assets/synth.wav");
     myMusic.play();
+    myMusic.loop = true;
     myGamePiece = new component(30, 30, "tiger", 10, 120, "image");
     myGamePiece.gravity = 0.05;
-    myScore = new component("30px", "Consolas", "black", 280, 40, "text");
+    myScore = new component("30px", "Consolas", "white", 280, 40, "text");
     myGameArea.start();
 }
 
