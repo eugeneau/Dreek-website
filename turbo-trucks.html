@@ -1,23 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-<nav style="font-size: 20px;">
-<a href="games">Go Back</a>
-</nav>
-<title>TurboTrucks</title>
-<style>
-html {
-    text-align: center;
-}
-canvas {
-    background: url('road.png');
-    background-size: cover;
-}
-</style>
-<h1>TURBOTRUCKS</h1>
-<img id="truck" width="64" height="64" src="assets/car.png">       
-</head>
-<body onload="return startGame();">
 <script>
 var myGamePiece = document.getElementById("truck");
 var myGameArea = {
@@ -88,6 +71,23 @@ function updateGameArea() {
     myGamePiece.update();
 }
 </script>
+<nav style="font-size: 20px;">
+<a href="games">Go Back</a>
+</nav>
+<title>TurboTrucks</title>
+<style>
+html {
+    text-align: center;
+}
+canvas {
+    background: url('road.png');
+    background-size: cover;
+}
+</style>
+<h1>TURBOTRUCKS</h1>
+<img id="truck" width="64" height="64" src="assets/car.png">       
+</head>
+<body onload="return startGame();">
 <hr/>
 <br/>
 Use the arrow keys to drive.
