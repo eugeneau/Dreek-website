@@ -37,8 +37,7 @@ nav {
   background: url('nav.png');
   background-size: 16px;
   color: white;
-  padding: 15px 25px;
-  text-align: center;
+  float: left;
   text-decoration: none;
   display: block;
   font-family: sans-serif;
