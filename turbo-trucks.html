@@ -57,19 +57,27 @@ function vehicle(width, height, color, x, y, type) {
         console.log("update: " + this.x + "y" + this.y);
     }
     this.newPos = function() {
+        ctx = myGameArea.context;
         this.angle += this.moveAngle * Math.PI / 180;
-        this.x += this.speed * Math.sin(this.angle);
-        this.y -= this.speed * Math.cos(this.angle);
+        this.x += this.speed * Math.sin(this.moveAngle);
+        this.y -= this.speed * Math.cos(this.moveAngle);
+        //ctx.save();
+        var tx = this.x + (this.width / 2);
+        var ty = this.y + (this.height / 2);
+        ctx.translate(tx, ty);
+        ctx.rotate(this.angle);
+        ctx.translate(-tx, -ty);
+        //ctx.restore();
     }
 }
 function updateGameArea() {
     myGameArea.clear();
     myGamePiece.moveAngle = 0;
     myGamePiece.speed = 0;
-    if (myGameArea.keys && myGameArea.keys[37]) {myGamePiece.moveAngle = -1; }
-    if (myGameArea.keys && myGameArea.keys[39]) {myGamePiece.moveAngle = 1; }
-    if (myGameArea.keys && myGameArea.keys[38]) {myGamePiece.speed= 2; }
-    if (myGameArea.keys && myGameArea.keys[40]) {myGamePiece.speed= -1; }
+    if (myGameArea.keys && myGameArea.keys[37]) {myGamePiece.moveAngle = -0.1; }
+    if (myGameArea.keys && myGameArea.keys[39]) {myGamePiece.moveAngle = 0.1; }
+    if (myGameArea.keys && myGameArea.keys[38]) {myGamePiece.speed= 1; }
+    if (myGameArea.keys && myGameArea.keys[40]) {myGamePiece.speed= -0.5; }
     myGamePiece.newPos();
     myGamePiece.update();
 }
