@@ -2,7 +2,8 @@
 <html>
 <head>
 <script>
-var myGamePiece = document.getElementById("truck");
+var myGamePiece;
+var truck = document.getElementById("truck");
 var myGameArea = {
     canvas : document.createElement("canvas"),
     start : function() {
@@ -42,7 +43,7 @@ function vehicle(width, height, color, x, y, type) {
     this.y = y;
     this.update = function() {
         ctx = myGameArea.context;
-        ctx.drawImage(myGamePiece, this.x, this.y, this.width, this.height); 
+        ctx.drawImage(truck, this.x, this.y, this.width, this.height); 
     }
     this.newPos = function() {
         this.angle += this.moveAngle * Math.PI / 180;
