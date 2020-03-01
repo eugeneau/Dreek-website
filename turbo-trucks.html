@@ -13,12 +13,14 @@ var myGameArea = {
         this.frameNo = 0;
         this.interval = setInterval(updateGameArea, 20);
         window.addEventListener('keydown', function (e) {
+            console.log("keydown");
             e.preventDefault();
             myGameArea.keys = (myGameArea.keys || []);
             myGameArea.keys[e.keyCode] = (e.type == "keydown");
             updateGameArea();
         });
         window.addEventListener('keyup', function (e) {
+            console.log("keyup");
             myGameArea.keys[e.keyCode] = (e.type == "keydown");
             updateGameArea();
         });
