@@ -63,7 +63,17 @@ function vehicle(width, height, color, x, y, type) {
         ctx = myGameArea.context;
         if (this.type == "image") {
             ctx.drawImage(myGamePiece, this.x, this.y, this.width, this.height);
-        }
+        this.update = function() {
+        ctx = myGameArea.context;
+        ctx.save();
+        ctx.translate(this.x, this.y);
+        ctx.rotate(this.angle);
+        ctx.restore();    
+    }
+    this.newPos = function() {
+        this.angle += this.moveAngle * Math.PI / 180;
+        this.x += this.speed * Math.sin(this.angle);
+        this.y -= this.speed * Math.cos(this.angle);
     }
 }
 function updateGameArea() {
