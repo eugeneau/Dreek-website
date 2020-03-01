@@ -3,7 +3,7 @@
 <head>
 <script>
 var myGamePiece;
-var truck = document.getElementById("truck");
+var truck;
 var myGameArea = {
     canvas : document.createElement("canvas"),
     start : function() {
@@ -29,6 +29,7 @@ var myGameArea = {
     }
 }
 function startGame() {
+    truck = document.getElementById("truck");
     myGamePiece = new vehicle(30, 30, "truck", 225, 225, "image");
     myGameArea.start();
 }
@@ -81,11 +82,14 @@ canvas {
     background-size: cover;
 }
 </style>
+</head>
+
+<body>
 <h1>TURBOTRUCKS</h1>
 <img id="truck" width="64" height="64" src="assets/car.png">       
-</head>
 <hr/>
 <button onclick="return startGame();">Play</button>
 <br/>
 <p>Use the arrow keys to drive.</p>
+</body>
 </html>
