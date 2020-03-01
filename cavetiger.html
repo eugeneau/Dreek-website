@@ -42,10 +42,7 @@ function startGame() {
     }
     myMusic = new sound("assets/synth.wav");
     myMusic.play();
-    myMusic.addEventListener('ended', function() {
-    this.currentTime = 0;
-    this.play();
-    }, false);
+    myMusic.loop = true;
     myGamePiece = new component(30, 30, "tiger", 10, 120, "image");
     myGamePiece.gravity = 0.05;
     myScore = new component("30px", "Consolas", "white", 280, 40, "text");
