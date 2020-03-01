@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head onload="startGame();">
 <script>
 var myGamePiece = document.getElementById("truck");
 var myGameArea = {
@@ -86,7 +86,6 @@ canvas {
 <h1>TURBOTRUCKS</h1>
 <img id="truck" width="64" height="64" src="assets/car.png">       
 </head>
-<body onload="return startGame();">
 <hr/>
 <br/>
 Use the arrow keys to drive.
