@@ -20,6 +20,7 @@ var myGameArea = {
         window.addEventListener('keyup', function (e) {
             myGameArea.keys[e.keyCode] = (e.type == "keydown");
         });
+        document.body.appendChild(this.canvas);
     },
     stop : function() {
         clearInterval(this.interval);
