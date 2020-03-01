@@ -55,6 +55,7 @@ function vehicle(width, height, color, x, y, type) {
         this.angle += this.moveAngle * Math.PI / 180;
         this.x += this.speed * Math.sin(this.angle);
         this.y -= this.speed * Math.cos(this.angle);
+        }
     }
 }
 function updateGameArea() {
