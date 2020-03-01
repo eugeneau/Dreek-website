@@ -40,22 +40,18 @@ function vehicle(width, height, color, x, y, type) {
     this.speedY = 0;    
     this.x = x;
     this.y = y;
-    this.gravity = 0;
-    this.gravitySpeed = 0;
     this.update = function() {
         ctx = myGameArea.context;
-        if (this.type == "image") {
-            ctx.drawImage(myGamePiece, this.x, this.y, this.width, this.height);
-        }
-        ctx.save();
-        ctx.translate(this.x, this.y);
-        ctx.rotate(this.angle);
-        ctx.restore();    
+        ctx.drawImage(myGamePiece, this.x, this.y, this.width, this.height); 
     }
     this.newPos = function() {
         this.angle += this.moveAngle * Math.PI / 180;
         this.x += this.speed * Math.sin(this.angle);
         this.y -= this.speed * Math.cos(this.angle);
+        ctx.save();
+        ctx.translate(this.x, this.y);
+        ctx.rotate(this.angle);
+        ctx.restore();   
     }
 }
 function updateGameArea() {
@@ -87,7 +83,7 @@ canvas {
 <img id="truck" width="64" height="64" src="assets/car.png">       
 </head>
 <hr/>
-<button onclick="startGame();">Play</button>
+<button onclick="return startGame();">Play</button>
 <br/>
 <p>Use the arrow keys to drive.</p>
 </html>
