@@ -40,7 +40,7 @@ function startGame() {
     if (myGameArea.frameNo == 5000){
         alert("Congrats, you reached score 5000!")
     }
-    myMusic = new sound("assets/cave.wav");
+    myMusic = new sound("assets/flute.wav");
     myMusic.play();
     myMusic.loop = true;
     myGamePiece = new component(30, 30, "tiger", 10, 120, "image");
@@ -66,6 +66,7 @@ var myGameArea = {
 function sound(src) {
     this.sound = document.createElement("audio");
     this.sound.src = src;
+    this.sound = createjs.Sound.play("assets/flute.wav", "none", 0, 0, -1, 0.5);
     this.sound.setAttribute("preload", "auto");
     this.sound.setAttribute("controls", "none");
     this.sound.style.display = "none";
