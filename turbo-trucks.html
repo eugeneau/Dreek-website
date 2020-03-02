@@ -55,7 +55,7 @@ function vehicle(width, height, color, x, y, type) {
     }
     this.newPos = function() {
         ctx = myGameArea.context;
-        this.angle += this.moveAngle * Math.PI / 180;
+        this.angle += this.moveAngle * Math.PI / 45;
         this.x += this.speed * Math.sin(this.moveAngle);
         this.y -= this.speed * Math.cos(this.moveAngle);
         //ctx.save();
