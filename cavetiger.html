@@ -20,7 +20,7 @@ canvas {
 <h1>CAVE JUMPER</h1>
 <img id="tiger" width="30" height="30" src="tiger.png">       
 </head>
-<body onload="startGame()"onmouseup="accelerate(0.2)" onmousedown="accelerate(-0.2)">
+<body onload="startGame()" onmouseup="accelerate(0.2)" onmousedown="accelerate(-0.2)">
 
 <script>
 
@@ -40,9 +40,9 @@ function startGame() {
     if (myGameArea.frameNo == 5000){
         alert("Congrats, you reached score 5000!")
     }
-    myMusic = new sound("assets/cave.wav");
+    myMusic = new sound("assets/synth.wav");
     myMusic.play();
-    myMusic.loop = true;
+    musicLoop();
     myGamePiece = new component(30, 30, "tiger", 10, 120, "image");
     myGamePiece.gravity = 0.05;
     myScore = new component("30px", "Consolas", "white", 280, 40, "text");
