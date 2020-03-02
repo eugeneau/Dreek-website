@@ -36,6 +36,7 @@ var myGameArea = {
 function startGame() {
     truck = document.getElementById("truck");
     myGamePiece = new vehicle(30, 30, "truck", 225, 225, "image");
+    myGamePiece.angle = 90;
     myGameArea.start();
     myGamePiece.update();
 }
