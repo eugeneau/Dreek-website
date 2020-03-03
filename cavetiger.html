@@ -99,7 +99,9 @@ function component(width, height, color, x, y, type) {
         
         // Add this section for tiger image
         } else if (this.type == "image") {
+            ctx.save();
             ctx.drawImage(tiger, this.x, this.y, this.width, this.height);
+            ctx.restore();
         } else {
             ctx.fillStyle = color;
             ctx.fillRect(this.x, this.y, this.width, this.height);
