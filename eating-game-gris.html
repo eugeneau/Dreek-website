@@ -4,8 +4,11 @@
   width: 600px;
   height: 400px;
   border: 1px solid black;
+  align-items: center;
 }
 </style>
+<img id="choco" style="display: none;" width="12" height="17" src="assets/choco.png">
+<img id="gris" style="display: none;" width="163" height="163" src="gris.ico">
 <script>
 // Collect The Square game
 
@@ -13,6 +16,8 @@
 var canvas = document.getElementById('canvas');
 // Get the canvas drawing context
 var context = canvas.getContext('2d');
+var choco = document.getElementById('choco');
+var gris = document.getElementById('gris');
 
 // Your score
 var score = 0;
@@ -86,7 +91,7 @@ function menu() {
   context.fillStyle = '#000000';
   context.font = '36px Arial';
   context.textAlign = 'center';
-  context.fillText('Collect the Square!', canvas.width / 2, canvas.height / 4);
+  context.fillText('Eating Game Gris Edition!', canvas.width / 2, canvas.height / 4);
   context.font = '24px Arial';
   context.fillText('Click to Start', canvas.width / 2, canvas.height / 2);
   context.font = '18px Arial'
@@ -172,11 +177,9 @@ function draw() {
     }
   }
   // Draw the square
-  context.fillStyle = '#FF0000';
-  context.fillRect(x, y, sideLength, sideLength);
+  context.drawImage(gris);
   // Draw the target 
-  context.fillStyle = '#00FF00';
-  context.fillRect(targetX, targetY, targetLength, targetLength);
+  context.drawImage(choco);
   // Draw the score and time remaining
   context.fillStyle = '#000000';
   context.font = '24px Arial';
