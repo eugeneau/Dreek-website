@@ -42,3 +42,27 @@ nav {
   display: block;
   font-family: sans-serif;
 }
+.grisgame {
+  width: 128;
+  height: 128;
+  float: left;
+  background: url('gris.ico');
+}
+.cargame {
+  width: 128;
+  height: 128;
+  float: left;
+  background: url('car.ico');
+}
+.stevegame {
+  width: 128;
+  height: 128;
+  float: left;
+  background: url('favicon.ico');
+}
+.cavegame {
+  width: 128;
+  height: 128;
+  float: left;
+  background: url('cave.ico');
+}
