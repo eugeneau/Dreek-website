@@ -20,7 +20,7 @@ canvas {
 <h1>CAVE JUMPER</h1>
 <img id="tiger" width="30" height="21" src="assets/tiger.gif" style="display: none;">       
 </head>
-<body onload="startGame()" onmouseup="accelerate(0.3)" onmousedown="accelerate(-0.2)">
+<body onmouseup="accelerate(0.3)" onmousedown="accelerate(-0.2)">
 
 <script>
 
@@ -177,6 +177,7 @@ function accelerate(n) {
 }
 </script>
 <hr>
+<button onclick="startgame();">Play</button>
 <p>Press the screen to jump.</p>
 <p>Can you beat the score 5000?</p>
 </body>
