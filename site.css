@@ -47,7 +47,7 @@ nav {
   width: 128;
   height: 128;
   cursor: pointer;
-  align-items: center;
+  text-align: center;
   background: url('gris.ico');
   background-size: cover;
 }
@@ -55,7 +55,7 @@ nav {
   color: red;
   width: 128;
   height: 128;
-  align-items: center;
+  text-align: center;
   background: url('car.ico');
   background-size: cover;
 }
@@ -64,7 +64,7 @@ nav {
   width: 128;
   height: 128;
   cursor: pointer;
-  align-items: center;
+  text-align: center;
   background: url('favicon.ico');
   background-size: cover;
 }
@@ -73,7 +73,7 @@ nav {
   width: 128;
   height: 128;
   cursor: pointer;
-  align-items: center;
+  text-align: center;
   background: url('cave.ico');
   background-size: cover;
 }
@@ -82,7 +82,7 @@ nav {
   width: 128;
   height: 128;
   cursor: pointer;
-  align-items: center;
+  text-align: center;
   background: url('gun.ico');
   background-size: cover;
 }
