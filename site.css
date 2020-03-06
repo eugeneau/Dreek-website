@@ -55,6 +55,7 @@ nav {
   color: red;
   width: 128;
   height: 128;
+  cursor: pointer;
   text-align: center;
   background: url('car.ico');
   background-size: cover;
