@@ -7,7 +7,6 @@
 <title>Cave Jumper</title>
 <style>
 body {
-    background: url('nav.png');
     text-align: center;
 }
 canvas {
@@ -55,8 +54,8 @@ function musicLoop() {
 var myGameArea = {
     canvas : document.createElement("canvas"),
     start : function() {
-        this.canvas.width = 2070;
-        this.canvas.height = 1080;
+        this.canvas.width = 480;
+        this.canvas.height = 270;
         this.context = this.canvas.getContext("2d");
         document.body.insertBefore(this.canvas, document.body.childNodes[0]);
         this.frameNo = 0;
@@ -174,7 +173,7 @@ function accelerate(n) {
     myGamePiece.gravity = n;
 }
 </script>
-<hr>
+<br>
 <button onclick="startGame()">Play</button>
 <p>Press the screen to jump.</p>
 <p>Can you beat the score 5000?</p>
