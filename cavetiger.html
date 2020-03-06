@@ -41,7 +41,7 @@ function startGame() {
     myMusic = new sound("assets/synth.wav");
     myMusic.play();
     musicLoop();
-    myGamePiece = new component(60, 42, "tiger", 10, 120, "image");
+    myGamePiece = new component(30, 21, "tiger", 10, 120, "image");
     myGamePiece.gravity = 0.05;
     myScore = new component("30px", "Consolas", "white", 280, 40, "text");
     myGameArea.start();
@@ -55,8 +55,8 @@ function musicLoop() {
 var myGameArea = {
     canvas : document.createElement("canvas"),
     start : function() {
-        this.canvas.width = 1080;
-        this.canvas.height = 2070;
+        this.canvas.width = 2070;
+        this.canvas.height = 1080;
         this.context = this.canvas.getContext("2d");
         document.body.insertBefore(this.canvas, document.body.childNodes[0]);
         this.frameNo = 0;
