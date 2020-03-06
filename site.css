@@ -43,10 +43,10 @@ nav {
   font-family: sans-serif;
 }
 .grisgame {
-  color: red;
+  color: green;
   width: 128;
   height: 128;
-  float: left;
+  align-items: center;
   background: url('gris.ico');
   background-size: cover;
 }
@@ -54,23 +54,31 @@ nav {
   color: red;
   width: 128;
   height: 128;
-  float: left;
+  align-items: center;
   background: url('car.ico');
   background-size: cover;
 }
 .stevegame {
-  color: red;
+  color: white;
   width: 128;
   height: 128;
-  float: left;
+  align-items: center;
   background: url('favicon.ico');
   background-size: cover;
 }
 .cavegame {
+  color: blue;
+  width: 128;
+  height: 128;
+  align-items: center;
+  background: url('cave.ico');
+  background-size: cover;
+}
+.gungame {
   color: red;
   width: 128;
   height: 128;
-  float: left;
-  background: url('cave.ico');
+  align-items: center;
+  background: url('gun.ico');
   background-size: cover;
 }
