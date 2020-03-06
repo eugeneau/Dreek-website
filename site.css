@@ -46,6 +46,7 @@ nav {
   color: green;
   width: 128;
   height: 128;
+  cursor: pointer;
   align-items: center;
   background: url('gris.ico');
   background-size: cover;
@@ -62,6 +63,7 @@ nav {
   color: white;
   width: 128;
   height: 128;
+  cursor: pointer;
   align-items: center;
   background: url('favicon.ico');
   background-size: cover;
@@ -70,6 +72,7 @@ nav {
   color: blue;
   width: 128;
   height: 128;
+  cursor: pointer;
   align-items: center;
   background: url('cave.ico');
   background-size: cover;
@@ -78,6 +81,7 @@ nav {
   color: red;
   width: 128;
   height: 128;
+  cursor: pointer;
   align-items: center;
   background: url('gun.ico');
   background-size: cover;
