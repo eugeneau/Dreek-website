@@ -10,7 +10,6 @@
     <script>
         var canvas = document.getElementById("game");
         var ctx = canvas.getContext("2d");
-        var steve = document.getElementById("player");
         var world = {
             height: 480,
             width: 640,
@@ -136,7 +135,7 @@
                 this.applyGravity();
             },
             draw: function() {
-                ctx.drawImage = "steve";
+                ctx.drawImage = "player";
             }
         };
         window.addEventListener("keypress", function(keyInfo) { player.keyPress(keyInfo); }, false);
