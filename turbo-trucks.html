@@ -34,6 +34,7 @@ function startGame() {
     myGamePiece = new vehicle(60, 60, "truck", 255, 220, "image");
     myGameArea.start();
     myGamePiece.update();
+    myGamePiece.gravity = 0.05;
 }
 function vehicle(width, height, color, x, y, type) {
     this.type = type;
@@ -47,10 +48,19 @@ function vehicle(width, height, color, x, y, type) {
     this.speed = 0;
     this.x = x;
     this.y = y;
+    this.gravity = 0;
+    this.gravitySpeed = 1;
     this.update = function() {
         ctx = myGameArea.context;
         ctx.drawImage(truck, this.x, this.y, this.width, this.height);
         console.log("update: " + this.x + "y" + this.y);
+    }
+    this.hitBottom = function() {
+        var rockbottom = myGameArea.canvas.height - this.height;
+        if (this.y > rockbottom) {
+            this.y = rockbottom;
+            this.gravitySpeed = 0;
+        }
     }
     this.newPos = function() {
         ctx = myGameArea.context;
