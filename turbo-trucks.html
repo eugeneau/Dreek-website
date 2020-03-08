@@ -31,7 +31,7 @@ var myGameArea = {
 }
 function startGame() {
     truck = document.getElementById("truck");
-    myGamePiece = new vehicle(60, 60, "truck", 253, 320, "image");
+    myGamePiece = new vehicle(60, 60, "truck", 253, 120, "image");
     myGameArea.start();
     myGamePiece.update();
     myGamePiece.gravity = 0.05;
@@ -110,6 +110,6 @@ canvas {
 <hr/>
 <button onclick="return startGame();">Play</button>
 <br/>
-<p>Use the arrow keys to drive.</p>
+<p>Use the arrow keys to drive. Avoid other cars.</p>
 </body>
 </html>
