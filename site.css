@@ -87,3 +87,7 @@ nav {
   background: url('gun.ico');
   background-size: cover;
 }
+.beginning {
+  color: white;
+  font-size: 60px
+}
