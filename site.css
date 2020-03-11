@@ -25,15 +25,6 @@ a:hover, a:active {
   background: url('https://dreek16designer.com/active.png');
   background-size: 16px;
 }
-
-.settings {
-  color: white;
-  padding: 15px 25px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-}
-
 nav {
   background: url('nav.png');
   background-size: 16px;
@@ -86,8 +77,4 @@ nav {
   text-align: center;
   background: url('gun.ico');
   background-size: cover;
-}
-.beginning {
-  color: white;
-  font-size: 60px
 }
