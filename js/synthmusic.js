@@ -1,6 +1,6 @@
 var myMusic;
 function startGame() {
-  myMusic = new sound("assets/synth.wav");
+  myMusic = new sound("https://dreek16designer.com/assets/synth.wav");
   myMusic.play();
   musicLoop();
 }
