@@ -1,6 +1,6 @@
 var myMusic;
 function startGame() {
-  myMusic = new sound("assets/flute.wav");
+  myMusic = new sound("https://dreek16designer.com/assets/flute.wav");
   myMusic.play();
   musicLoop();
 }
