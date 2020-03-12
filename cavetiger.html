@@ -158,7 +158,7 @@ function updateGameArea() {
         myObstacles[i].x += -1;
         myObstacles[i].update();
     }
-    myScore.text="SCORE: " + myGameArea.frameNo;
+    myScore.text="Score: " + myGameArea.frameNo;
     myScore.update();
     myGamePiece.newPos();
     myGamePiece.update();
@@ -175,8 +175,7 @@ function accelerate(n) {
 </script>
 <br>
 <button onclick="startGame()">Play</button>
-<button onclick="startGame()">Play</button>
-<p>Press the screen to jump or use the button.</p>
+<p>Press the screen to jump.</p>
 <p>Can you beat the score 5000?</p>
 </body>
 </html>
