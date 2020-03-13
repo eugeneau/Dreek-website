@@ -13,7 +13,8 @@ canvas {
 </style>
 <img id="tiger" width="60" height="42" src="assets/tiger.gif" style="display: none; box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.29);">       
 </head>
-<body onmouseup="accelerate(0.3)" onmousedown="accelerate(-0.2)" onload="startGame();">
+<canvas width="960" height="540" id="game" onmouseup="accelerate(0.3)" onmousedown="accelerate(-0.2)"></canvas>
+<body onload="startGame();">
 
 <script>
 
@@ -41,10 +42,8 @@ function musicLoop() {
 }
 
 var myGameArea = {
-    canvas : document.createElement("canvas"),
+    canvas : document.getElementById("game"),
     start : function() {
-        this.canvas.width = 960;
-        this.canvas.height = 540;
         document.body.insertBefore(this.canvas, document.body.childNodes[0]);
         this.context = this.canvas.getContext("2d");
         this.frameNo = 0;
