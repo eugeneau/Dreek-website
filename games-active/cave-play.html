@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html onkeypress="alert("Game paused. Click OK to continue.");">
 <head>
 <title>Playing Cave Jumper</title>
 <style>
@@ -154,9 +154,6 @@ function everyinterval(n) {
 
 function accelerate(n) {
     myGamePiece.gravity = n;
-}
-function pauseGame() {
-    if (myGameArea.keys && myGameArea.keys[32]) {alert("Game paused. Click OK to continue.")};
 }
 </script>
 <br>
