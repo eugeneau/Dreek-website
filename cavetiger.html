@@ -15,7 +15,7 @@ canvas {
 }
 </style>
 <h1>CAVE JUMPER</h1>
-<img id="tiger" width="25" height="16" src="assets/tiger.gif" style="display: none; box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.29);">       
+<img id="tiger" width="60" height="42" src="assets/tiger.gif" style="display: none; box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.29);">       
 </head>
 <body onmouseup="accelerate(0.3)" onmousedown="accelerate(-0.2)">
 
@@ -33,9 +33,9 @@ function startGame() {
     myMusic = new sound("assets/synth.wav");
     myMusic.play();
     musicLoop();
-    myGamePiece = new component(60, 42, "tiger", 10, 120, "image");
+    myGamePiece = new component(50, 32, "tiger", 10, 120, "image");
     myGamePiece.gravity = 0.05;
-    myScore = new component("30px", "Consolas", "white", 280, 40, "text");
+    myScore = new component("30px", "Consolas", "white", 500, 40, "text");
     myGameArea.start();
 }
 
@@ -157,7 +157,7 @@ function updateGameArea() {
         myObstacles[i].x += -1;
         myObstacles[i].update();
     }
-    myScore.text="Score: " + myGameArea.frameNo;
+    myScore.text="SCORE: " + myGameArea.frameNo;
     myScore.update();
     myGamePiece.newPos();
     myGamePiece.update();
