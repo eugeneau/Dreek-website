@@ -46,7 +46,6 @@ var myGameArea = {
         this.canvas.width = 960;
         this.canvas.height = 540;
         this.context = this.canvas.getContext("2d");
-        document.body.insertBefore(this.canvas, document.body.childNodes[0]);
         this.frameNo = 0;
         this.interval = setInterval(updateGameArea, 20);
         },
@@ -124,7 +123,7 @@ function component(width, height, color, x, y, type) {
 }
 
 function updateGameArea() {
-    if (myGameArea.frameNo == 60000){
+    if (myGameArea.frameNo == 40000){
         alert("Password: Mitrz")
     }
     if (myGameArea.frameNo == 5000){
@@ -168,7 +167,8 @@ function accelerate(n) {
     myGamePiece.gravity = n;
 }
 </script>
-<button onclick="window.location.href = 'games';">Go Back</button>
+<br>
+<a href="cavetiger" draggable="true">Go Back</a>
 <button onclick="alert("Game paused. Click OK to continue.")">Pause</button>
 </body>
 </html>
