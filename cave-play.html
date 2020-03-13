@@ -26,7 +26,7 @@ var myMusic;
 var tiger = document.getElementById("tiger");
 
 function startGame() {
-    myMusic = new sound("assets/synth.wav");
+    myMusic = document.getElementById("music");
     myMusic.play();
     musicLoop();
     myGamePiece = new component(50, 32, "tiger", 10, 120, "image");
@@ -45,6 +45,7 @@ var myGameArea = {
     start : function() {
         this.canvas.width = 960;
         this.canvas.height = 540;
+        document.body.insertBefore(this.canvas, document.body.childNodes[0]);
         this.context = this.canvas.getContext("2d");
         this.frameNo = 0;
         this.interval = setInterval(updateGameArea, 20);
@@ -52,17 +53,6 @@ var myGameArea = {
     clear : function() {
         this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
     }
-}
-function sound(src) {
-    this.sound = document.createElement("audio");
-    this.sound.src = src;
-    this.sound.setAttribute("preload", "auto");
-    this.sound.setAttribute("controls", "none");
-    this.sound.style.display = "none";
-    document.body.appendChild(this.sound);
-    this.play = function(){
-        this.sound.play();
-    } 
 }
 function component(width, height, color, x, y, type) {
     this.type = type;
@@ -168,6 +158,7 @@ function accelerate(n) {
 }
 </script>
 <br>
+<audio src="assets/synth.wav" preload="auto" controls="none" style="display: none;" id="music"></audio>
 <a href="cavetiger" draggable="true">Go Back</a>
 <button onclick="alert("Game paused. Click OK to continue.")">Pause</button>
 </body>
