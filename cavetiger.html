@@ -28,18 +28,8 @@ var myScore;
 var myMusic;
 
 var tiger = document.getElementById("tiger");
-    
-$(function() {
-    $( ".tiger" ).draggable();
-});
 
 function startGame() {
-    if (myGameArea.frameNo == 60000){
-        alert("Password: Meetourz")
-    }
-    if (myGameArea.frameNo == 5000){
-        alert("Congrats, you reached score 5000!")
-    }
     myMusic = new sound("assets/synth.wav");
     myMusic.play();
     musicLoop();
@@ -138,6 +128,12 @@ function component(width, height, color, x, y, type) {
 }
 
 function updateGameArea() {
+    if (myGameArea.frameNo == 60000){
+        alert("Password: Mitrz")
+    }
+    if (myGameArea.frameNo == 5000){
+        alert("Congrats, you reached score 5000!")
+    }
     var x, height, gap, minHeight, maxHeight, minGap, maxGap;
     for (i = 0; i < myObstacles.length; i += 1) {
         if (myGamePiece.crashWith(myObstacles[i])) {
@@ -180,6 +176,6 @@ function accelerate(n) {
 <button onclick="startGame()">Play</button>
 <p>Press the screen to jump.</p>
 <p>Can you beat the score 5000?</p><br>
-<p>Try to collect coins.</p>
+<p draggable="true">Try to collect coins.</p>
 </body>
 </html>
