@@ -1,7 +1,7 @@
 html {
   background: url('site.png');
   background-size: 16px;
-  cursor: url('https://gamepedia.cursecdn.com/minecraft_gamepedia/2/26/Emerald_JE3_BE3.png?version=7b4dcff53cb209f00c7321a2005f75a3'), auto;	
+  cursor: url('https://dreek16designer.com/cur.png'), auto;	
   text-align: center;
   border: 4px solid red;
   font-family: "ARDESTINE";
@@ -91,3 +91,12 @@ nav {
   background: url('gun.ico');
   background-size: cover;
 }
+hr { 
+  display: block;
+  margin-top: 0.1em;
+  margin-bottom: 0.1em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 0.2px;
+} 
