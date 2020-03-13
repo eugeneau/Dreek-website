@@ -7,11 +7,11 @@ body {
     text-align: center;
 }
 canvas {
-    background: url('assets/cavetigerb.png');
+    background: url('https://dreek16designer.com/assets/cavetigerb.png');
     background-size: cover;
 }
 </style>
-<img id="tiger" width="60" height="42" src="assets/tiger.gif" style="display: none; box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.29);">       
+<img id="tiger" width="60" height="42" src="https://dreek16designer.com/assets/tiger.gif" style="display: none; box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.29);">       
 </head>
 <canvas width="960" height="540" id="game" onmouseup="accelerate(0.4)" onmousedown="accelerate(-0.2)"></canvas>
 <body onload="startGame();">
@@ -19,7 +19,7 @@ canvas {
 <script>
 
 var myGamePiece;
-var caveMan = myGamePiece="tiger.png";
+var caveMan = myGamePiece="tiger.gif";
 var myObstacles = [];
 var myScore;
 var myMusic;
@@ -155,10 +155,13 @@ function everyinterval(n) {
 function accelerate(n) {
     myGamePiece.gravity = n;
 }
+//function pauseGame() {
+//    alert("Game paused. Click OK to continue.");
+//    myGameArea.stop;
+//}
 </script>
 <br>
 <audio src="assets/synth.wav" preload="auto" controls="none" style="display: none;" id="music"></audio>
-<a href="cavetiger" draggable="true">Go Back</a>
-<button onclick="alert("Game paused. Click OK to continue.")">Pause</button>
+<a href="https://dreek16designer.com/cavetiger" draggable="true">Go Back</a>
 </body>
 </html>
