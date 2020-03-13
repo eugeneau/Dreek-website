@@ -155,13 +155,12 @@ function everyinterval(n) {
 function accelerate(n) {
     myGamePiece.gravity = n;
 }
-//function pauseGame() {
-//    alert("Game paused. Click OK to continue.");
-//    myGameArea.stop;
-//}
+function pauseGame() {
+    if (myGameArea.keys && myGameArea.keys[32]) {alert("Game paused. Click OK to continue.")};
+}
 </script>
 <br>
-<audio src="assets/synth.wav" preload="auto" controls="none" style="display: none;" id="music"></audio>
+<audio src="https://dreek16designer.com/assets/synth.wav" preload="auto" controls="none" style="display: none;" id="music"></audio>
 <a href="https://dreek16designer.com/cavetiger" draggable="true">Go Back</a>
 </body>
 </html>
