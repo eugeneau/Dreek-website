@@ -30,7 +30,7 @@ function startGame() {
     myMusic = document.getElementById("music");
     myMusic.play();
     musicLoop();
-    myGamePiece = new component(50, 32, "tiger", 10, 120, "image");
+    myGamePiece = new component(50, 32, "tiger", 10, 130, "image");
     myGamePiece.gravity = 0.05;
     myScore = new component("30px", "Consolas", "white", 500, 40, "text");
     myGameArea.start();
@@ -85,14 +85,6 @@ function component(width, height, color, x, y, type) {
         this.gravitySpeed += this.gravity;
         this.x += this.speedX;
         this.y += this.speedY + this.gravitySpeed;
-        this.hitBottom();
-    }
-    this.hitBottom = function() {
-        var rockbottom = myGameArea.canvas.height - this.height;
-        if (this.y > rockbottom) {
-            this.y = rockbottom;
-            this.gravitySpeed = 0;
-        }
     }
     this.crashWith = function(otherobj) {
         var myleft = this.x;
