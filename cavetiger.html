@@ -2,7 +2,7 @@
 <html>
 <head>
 <nav style="font-size: 20px;">
-<a href="games">Go Back</a>
+<a href="games" draggable="true">Go Back</a>
 </nav>
 <title>Cave Jumper</title>
 <style>
@@ -33,7 +33,7 @@ function startGame() {
     myMusic = new sound("assets/synth.wav");
     myMusic.play();
     musicLoop();
-    myGamePiece = new component(30, 21, "tiger", 10, 120, "image");
+    myGamePiece = new component(60, 42, "tiger", 10, 120, "image");
     myGamePiece.gravity = 0.05;
     myScore = new component("30px", "Consolas", "white", 280, 40, "text");
     myGameArea.start();
@@ -47,8 +47,8 @@ function musicLoop() {
 var myGameArea = {
     canvas : document.createElement("canvas"),
     start : function() {
-        this.canvas.width = 480;
-        this.canvas.height = 270;
+        this.canvas.width = 960;
+        this.canvas.height = 540;
         this.context = this.canvas.getContext("2d");
         document.body.insertBefore(this.canvas, document.body.childNodes[0]);
         this.frameNo = 0;
@@ -144,14 +144,14 @@ function updateGameArea() {
     myGameArea.frameNo += 1;
     if (myGameArea.frameNo == 1 || everyinterval(150)) {
         x = myGameArea.canvas.width;
-        minHeight = 20;
-        maxHeight = 200;
+        minHeight = 40;
+        maxHeight = 400;
         height = Math.floor(Math.random()*(maxHeight-minHeight+1)+minHeight);
-        minGap = 50;
-        maxGap = 200;
+        minGap = 100;
+        maxGap = 400;
         gap = Math.floor(Math.random()*(maxGap-minGap+1)+minGap);
-        myObstacles.push(new component(10, height, "#616161", x, 0));
-        myObstacles.push(new component(10, x - height - gap, "#616161", x, height + gap));
+        myObstacles.push(new component(20, height, "#616161", x, 0));
+        myObstacles.push(new component(20, x - height - gap, "#616161", x, height + gap));
     }
     for (i = 0; i < myObstacles.length; i += 1) {
         myObstacles[i].x += -1;
