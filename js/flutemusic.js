@@ -15,3 +15,7 @@ function sound(src) {
         this.sound.play();
     } 
 }
+function musicLoop() {
+    myMusic.play();
+    setTimeout(musicLoop, 0);
+}
