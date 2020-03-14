@@ -11,9 +11,9 @@ canvas {
     background-size: cover;
 }
 </style>
-<img id="tiger" width="60" height="42" src="https://dreek16designer.com/assets/tiger.gif" style="display: none; box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.29);">       
+<img id="tiger" width="60" height="42" src="https://dreek16designer.com/assets/tiger.gif" style="display: none;">       
 </head>
-<canvas width="970" height="550" id="game" onmouseup="accelerate(0.4)" onmousedown="accelerate(-0.2)"></canvas>
+<canvas width="970" height="550" id="game" onmouseup="accelerate(0.3)" onmousedown="accelerate(-0.3)"></canvas>
 <body onload="startGame();">
 
 <script>
@@ -32,7 +32,7 @@ function startGame() {
     musicLoop();
     myGamePiece = new component(55, 37, "tiger", 10, 140, "image");
     myGamePiece.gravity = 0.05;
-    myScore = new component("30px", "Ardestine", "white", 700, 40, "text");
+    myScore = new component("30px", "Arial", "white", 800, 40, "text");
     myGameArea.start();
 }
 
@@ -158,6 +158,5 @@ function accelerate(n) {
 </script>
 <br>
 <audio src="https://dreek16designer.com/assets/synth.wav" preload="auto" controls="none" style="display: none;" id="music"></audio>
-<a href="https://dreek16designer.com/cavetiger" draggable="true">Go Back</a>
 </body>
 </html>
