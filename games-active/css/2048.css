@@ -85,8 +85,9 @@ body{
 }
 
 #stage{
-    background: #01bfae;
-    cursor: pointer;
+    background: url('https://dreek16designer.com/assets/2048.png');
+    background-size: cover;
+    cursor: crosshair;
     -moz-user-select: none;
     -khtml-user-select: none;
     user-select: none;
