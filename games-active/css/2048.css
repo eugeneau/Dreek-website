@@ -205,7 +205,7 @@ div{
 }
 
 .num64{
-    background: url('https://dreek16designer.com/gris.ico');
+    background: url('https://dreek16designer.com/yerm.ico');
     background-size: cover;
     color:#fff;
     font-size: 80px;
@@ -221,7 +221,7 @@ div{
 }
 
 .num256{
-    background: url('https://dreek16designer.com/yerm.ico');
+    background: url('https://dreek16designer.com/bung.ico');
     background-size: cover;
     color:#ffcc66;
     font-size: 52px;
@@ -237,8 +237,8 @@ div{
 }
 
 .num1024{
-    background: url('https://dreek16designer.com/gris.ico');
-    background-size: cover;
+    background: url('https://dreek16designer.com/car.ico');
+    background-size: auto;
     color: #f6f7ff;
     font-size: 52px;
     transition:all .2s ease;   -ms-transition:all .2s ease; -moz-transition:all .2s ease; -o-transition:all .2s ease; -webkit-transition:all .2s ease;
@@ -248,14 +248,6 @@ div{
     background: url('https://dreek16designer.com/panda.ico');
     background-size: cover;
     color: #fff300;
-    font-size: 52px;
-    transition:all .2s ease;   -ms-transition:all .2s ease; -moz-transition:all .2s ease; -o-transition:all .2s ease; -webkit-transition:all .2s ease;
-}
-
-.num4096{
-    background: url('https://dreek16designer.com/car.ico');
-    background-size: auto;
-    color: #fff;
     font-size: 52px;
     transition:all .2s ease;   -ms-transition:all .2s ease; -moz-transition:all .2s ease; -o-transition:all .2s ease; -webkit-transition:all .2s ease;
 }
