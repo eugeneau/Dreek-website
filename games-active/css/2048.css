@@ -6,10 +6,9 @@ html{
 }
 
 p{
-    color: black;
-    font-family: "microsoft yahei";
+    color: blue;
+    font-family: "sans-serif";
     font-weight: bold;
-    left: -10px;
     
 }
 
@@ -49,19 +48,6 @@ body{
      padding:10px;
      position: relative;
      margin-top:10px;
- }
-.scoreBar:before{
-    text-align: center;
-    content: "";
-    display: block;
-    border-width: 20px;
-    border-color: transparent #fff transparent transparent ;
-    border-style: solid;
-    top:50%;
-    margin-top:-20px;
-}
- #score{
-     font-size: 50px;
  }
  
  #addScore{
