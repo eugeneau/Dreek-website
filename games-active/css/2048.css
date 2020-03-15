@@ -193,7 +193,7 @@ div{
 }
 
 .num8{
-    background: url('https://dreek16designer.com/gris.ico');
+    background: url('https://dreek16designer.com/favicon.ico');
     background-size: cover;
     color:#f94e2f;
     font-size: 100px;
@@ -259,7 +259,7 @@ div{
 }
 
 .num2048{
-    background: url('https://dreek16designer.com/gris.ico');
+    background: url('https://dreek16designer.com/panda.ico');
     background-size: cover;
     color: #fff300;
     font-size: 52px;
@@ -267,8 +267,8 @@ div{
 }
 
 .num4096{
-    background: url('https://dreek16designer.com/gris.ico');
-    background-size: cover;
+    background: url('https://dreek16designer.com/car.ico');
+    background-size: auto;
     color: #fff;
     font-size: 52px;
     transition:all .2s ease;   -ms-transition:all .2s ease; -moz-transition:all .2s ease; -o-transition:all .2s ease; -webkit-transition:all .2s ease;
