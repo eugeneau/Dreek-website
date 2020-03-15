@@ -51,14 +51,13 @@ body{
      margin-top:10px;
  }
 .scoreBar:before{
+    text-align: center;
     content: "";
     display: block;
     border-width: 20px;
     border-color: transparent #fff transparent transparent ;
     border-style: solid;
-    position: absolute;
     top:50%;
-    left:-40px;
     margin-top:-20px;
 }
  #score{
