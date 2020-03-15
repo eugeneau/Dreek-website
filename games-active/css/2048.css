@@ -181,7 +181,7 @@ div{
 .num8{
     background: url('https://dreek16designer.com/favicon.ico');
     background-size: cover;
-    color:#f94e2f;
+    color:yellow;
     font-size: 100px;
     transition:all .2s ease;   -ms-transition:all .2s ease; -moz-transition:all .2s ease; -o-transition:all .2s ease; -webkit-transition:all .2s ease; 
     animation: myfirst .5s;
@@ -190,7 +190,7 @@ div{
 .num16{
     background: url('https://dreek16designer.com/gris.ico');
     background-size: cover;
-    color:#fff;
+    color:blue;
     font-size: 80px;
     transition:all .2s ease;   -ms-transition:all .2s ease; -moz-transition:all .2s ease; -o-transition:all .2s ease; -webkit-transition:all .2s ease; 
     animation: myfirst .5s;
@@ -199,7 +199,7 @@ div{
 .num32{
     background: url('https://dreek16designer.com/gris.ico');
     background-size: cover;
-    color: #fdfdfd;
+    color: mediumvioletred;
     font-size: 80px;
     transition:all .2s ease;   -ms-transition:all .2s ease; -moz-transition:all .2s ease; -o-transition:all .2s ease; -webkit-transition:all .2s ease;
 }
@@ -207,7 +207,7 @@ div{
 .num64{
     background: url('https://dreek16designer.com/yerm.ico');
     background-size: cover;
-    color:#fff;
+    color: green;
     font-size: 80px;
     transition:all .2s ease;   -ms-transition:all .2s ease; -moz-transition:all .2s ease; -o-transition:all .2s ease; -webkit-transition:all .2s ease;
 }
@@ -223,7 +223,7 @@ div{
 .num256{
     background: url('https://dreek16designer.com/bung.ico');
     background-size: cover;
-    color:#ffcc66;
+    color: lightblue;
     font-size: 52px;
     transition:all .2s ease;   -ms-transition:all .2s ease; -moz-transition:all .2s ease; -o-transition:all .2s ease; -webkit-transition:all .2s ease;
 }
