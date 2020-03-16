@@ -79,7 +79,7 @@ var gameObj = {
         return false;
     },
     gameOver:function(){
-        alert('GAVE OVER!');
+        alert('GAME OVER! TRY AGAIN, GRIS!');
     },
     moveTo :function (obj1, obj2) {
             obj2.boxObj = obj1.boxObj;
