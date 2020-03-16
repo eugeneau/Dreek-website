@@ -136,13 +136,13 @@ function updateGameArea() {
     }
     myGameArea.clear();
     myGameArea.frameNo += 1;
-    if (myGameArea.frameNo == 1 || everyinterval(100)) {
+    if (myGameArea.frameNo == 1 || everyinterval(200)) {
         x = myGameArea.canvas.width;
         minHeight = 50;
         maxHeight = 410;
         height = Math.floor(Math.random()*(maxHeight-minHeight+1)+minHeight);
-        minGap = 150;
-        maxGap = 300;
+        minGap = 200;
+        maxGap = 350;
         gap = Math.floor(Math.random()*(maxGap-minGap+1)+minGap);
         myObstacles.push(new component(10, height, "#616161", x, 0));
         myObstacles.push(new component(10, x - height - gap, "#616161", x, height + gap));
