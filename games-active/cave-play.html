@@ -21,7 +21,7 @@ hr {
   border-width: 1px;
 } 
 </style>
-<img id="tiger" width="60" height="42" src="https://dreek16designer.com/assets/tiger.gif" style="display: none;">       
+<img id="tiger" width="170" height="59" src="https://dreek16designer.com/assets/tiger.gif" style="display: none;">       
 </head>
 <canvas width="970" height="550" id="game" onmouseup="accelerate(0.3)" onmousedown="accelerate(-0.3)"></canvas>
 <body onload="startGame();">
@@ -40,7 +40,7 @@ function startGame() {
     myMusic = document.getElementById("music");
     myMusic.play();
     musicLoop();
-    myGamePiece = new component(50, 32, "tiger", 10, 140, "image");
+    myGamePiece = new component(170, 59, "tiger", 10, 140, "image");
     myGamePiece.gravity = 0.05;
     myScore = new component("30px", "Arial", "white", 750, 40, "text");
     myGameArea.start();
