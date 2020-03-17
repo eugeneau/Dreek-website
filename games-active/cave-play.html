@@ -24,7 +24,7 @@ hr {
 <img id="tiger" width="170" height="59" src="https://dreek16designer.com/assets/tiger.gif" style="display: none;">     
 <img id="coin" width="32" height="32" src="https://dreek16designer.com/assets/coin.png" style="display: none;">   
 </head>
-<canvas width="970" height="550" id="game" onmouseup="accelerate(0.3)" onmousedown="accelerate(-0.3)"></canvas>
+<canvas width="970" height="550" id="game" onmouseup="accelerate(0.3)" onmousedown="accelerate(-0.3)" ontouchstart="accelerate(0.3)" ontouchend="accelerate(-0.3)"></canvas>
 <body onload="startGame();">
 
 <script>
@@ -180,5 +180,6 @@ function accelerate(n) {
 <audio src="https://dreek16designer.com/assets/synth.wav" preload="auto" controls="none" style="display: none;" id="music"></audio>
 <br>
 <button onclick="window.location.href = 'https://dreek16designer.com/games-active/cave-play';">Restart</button>
+<button onclick="alert('Game paused. Click OK to continue.'); myMusic.stop();">Pause</button>
 </body>
 </html>
