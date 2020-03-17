@@ -87,7 +87,10 @@ function component(width, height, color, x, y, type) {
             ctx.fillText(this.text, this.x, this.y);
         } else if (this.type == "image") {
             ctx.drawImage(tiger, this.x, this.y, this.width, this.height);
-        } else if (this.color == "coin") {
+        } else {
+            ctx.fillStyle = color;
+            ctx.fillRect(this.x, this.y, this.width, this.height);
+        if (this.color == "coin") {
             ctx.drawImage(coinImage, this.x, this.y, this.width, this.height);
         }
     }
@@ -175,7 +178,7 @@ function accelerate(n) {
 }
 </script>
 <br>
-<audio src="https://dreek16designer.com/assets/flute.wav" preload="auto" controls="none" style="display: none;" id="music"></audio>
+<audio src="https://dreek16designer.com/assets/synth.wav" preload="auto" controls="none" style="display: none;" id="music"></audio>
 <br>
 <button onclick="window.location.href = 'https://dreek16designer.com/games-active/cave-play';">Restart</button>
 </body>
