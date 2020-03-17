@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html onkeypress="alert('Game paused. Click OK to continue.'); myMusic.stop();">
 <head>
@@ -24,7 +23,7 @@ hr {
 <img id="tiger" width="170" height="59" src="https://dreek16designer.com/assets/tiger.gif" style="display: none;">     
 <img id="coin" width="32" height="32" src="https://dreek16designer.com/assets/coin.png" style="display: none;">   
 </head>
-<canvas width="970" height="550" id="game" onmouseup="accelerate(0.5)" onmousedown="accelerate(-0.02)" ontouchstart="accelerate(0.5)" ontouchend="accelerate(-0.02)"></canvas>
+<canvas width="970" height="550" id="game" onmouseup="accelerate(0.3)" onmousedown="accelerate(-0.3)" ontouchend="accelerate(0.3)" ontouchstart="accelerate(-0.3)"></canvas>
 <body onload="startGame();">
 
 <script>
@@ -128,7 +127,7 @@ function updateGameArea() {
         alert("Password: Mitrz")
     }
     if (myGameArea.frameNo == 5000){
-        alert("Congrats, you reached score 3000! Keep going!")
+        alert("Congrats, you reached score 5000! Keep going!")
     }
     var x, height, gap, minHeight, maxHeight, minGap, maxGap;
     for (i = 0; i < myObstacles.length; i += 1) {
