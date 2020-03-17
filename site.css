@@ -24,20 +24,6 @@ a:link, a:visited {
   text-decoration: none;
   display: inline-block;
 }
-a:link.wood, a:visited.wood {
-  background: url('https://dreek16designer.com/button.png');
-  background-size: 16px;
-  color: white;
-  padding: 15px 25px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-}
-
-a:active.wood {
-  background: url('https://dreek16designer.com/active.png');
-  background-size: 16px;
-}
 nav {
   background: url('nav.png');
   background-size: 16px;
