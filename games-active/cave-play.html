@@ -43,6 +43,8 @@ function startGame() {
     myMusic = document.getElementById("music");
     myMusic.play();
     musicLoop();
+    myGamePiece.draggable();
+    collectable = new component(64, 64, "coin", 10, 180, "image");
     myGamePiece = new component(66, 23, "tiger", 10, 140, "image");
     myGamePiece.gravity = 0.05;
     myScore = new component("30px", "Arial", "white", 750, 40, "text");
@@ -83,15 +85,10 @@ function component(width, height, color, x, y, type) {
             ctx.font = this.width + " " + this.height;
             ctx.fillStyle = color;
             ctx.fillText(this.text, this.x, this.y);
-        
-        // Add this section for tiger image
         } else if (this.type == "image") {
-            ctx.save();
             ctx.drawImage(tiger, this.x, this.y, this.width, this.height);
-            ctx.restore();
-        } else {
-            ctx.fillStyle = color;
-            ctx.fillRect(this.x, this.y, this.width, this.height);
+        } else if (this.color == "coin") {
+            ctx.drawImage(coinImage, this.x, this.y, this.width, this.height);
         }
     }
     this.newPos = function() {
