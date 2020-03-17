@@ -39,8 +39,6 @@ canvas {
             ctx.font = this.width + " " + this.height;
             ctx.fillStyle = color;
             ctx.fillText(this.text, this.x, this.y);
-        
-        // Add this section for tiger image
         } else if (this.type == "image") {
             ctx.save();
             ctx.drawImage(car, this.x, this.y, this.width, this.height);
@@ -54,6 +52,6 @@ canvas {
 <canvas id="game" width="1080" height="566"></canvas>
 <img src="https://dreek16designer.com/assets/subie.png" id="subie" width="1276" height="996" style="display: none;">
 <img src="https://dreek16designer.com/assets/steeringwheel.png" id="wheel" width="369" height="323" style="display: none;">
-<gltf-viewer width="300" height="300" interactive src="https://dreek16designer.com/assets/models/track.gltf"></gltf-viewer>
+<x-model src="https://dreek16designer.com/assets/models/track.gltf"></x-model>
 </body>
 </html>
