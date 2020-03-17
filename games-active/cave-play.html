@@ -43,7 +43,6 @@ function startGame() {
     myMusic = document.getElementById("music");
     myMusic.play();
     musicLoop();
-    myGamePiece.draggable();
     collectable = new component(64, 64, "coin", 10, 180, "image");
     myGamePiece = new component(66, 23, "tiger", 10, 140, "image");
     myGamePiece.gravity = 0.05;
