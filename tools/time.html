@@ -2,6 +2,7 @@
 <html>
 <script>
 function showTime() {
+   document.getElementById('demo').innerHTML = Date();
    timeLoop();
 }
 function timeLoop() {
@@ -9,9 +10,9 @@ function timeLoop() {
    setTimeout(timeLoop, 1000);
 }
 </script>
-<body style="text-align: center;" onload="showTime">
+<body style="text-align: center;" onclick="showTime">
 <h2>Proper Time Settings</h2>
 <p id="demo"></p>
-Set your watch to this time, if it's wrong.
+Click the screen. Set your watch to this time if it's wrong.
 </body>
 </html> 
