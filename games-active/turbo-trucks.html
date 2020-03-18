@@ -53,7 +53,6 @@ function vehicle(width, height, color, x, y, type) {
     this.update = function() {
         ctx = myGameArea.context;
         ctx.drawImage(truck, this.x, this.y, this.width, this.height);
-        console.log("update: " + this.x + "y" + this.y);
     }
     this.hitBottom = function() {
         var rockbottom = myGameArea.canvas.height - this.height;
