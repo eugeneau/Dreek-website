@@ -79,10 +79,10 @@ function updateGameArea() {
     myGameArea.clear();
     myGamePiece.moveAngle = 0;
     myGamePiece.speed = 0;
-    if (myGameArea.keys && myGameArea.keys[37]) {myGameArea.moveAngle = 1; }
-    if (myGameArea.keys && myGameArea.keys[39]) {myGameArea.moveAngle = -1; }
-    if (myGameArea.keys && myGameArea.keys[38]) {myGameArea.speed= -1.5; }
-    if (myGameArea.keys && myGameArea.keys[40]) {myGamePiece.speed= 1; }
+    if (myGameArea.keys && myGameArea.keys[37]) {myGameArea.moveAngle = -1; }
+    if (myGameArea.keys && myGameArea.keys[39]) {myGameArea.moveAngle = 1; }
+    if (myGameArea.keys && myGameArea.keys[38]) {myGameArea.speed= -1; }
+    if (myGameArea.keys && myGameArea.keys[40]) {myGamePiece.speed= 1.5; }
     myGamePiece.newPos();
     myGamePiece.update();
 }
