@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html>
-<body style="text-align: center;">
+<script>
+function showTime() {
+   timeLoop();
+}
+function timeLoop() {
+   document.getElementById('demo').innerHTML = Date();
+   setTimeout(timeLoop, 1000);
+}
+</script>
+<body style="text-align: center;" onload="showTime">
 <h2>Proper Time Settings</h2>
-<button
-onclick="document.getElementById('demo').innerHTML = Date()">
-Click to display Date and Time.</button>
 <p id="demo"></p>
 Set your watch to this time, if it's wrong.
 </body>
