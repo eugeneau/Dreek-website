@@ -31,7 +31,7 @@ var myGameArea = {
 }
 function startGame() {
     truck = document.getElementById("truck");
-    myGamePiece = new vehicle(60, 60, "truck", 253, 200, "image");
+    myGamePiece = new vehicle(60, 60, "truck", 240, 135, "image");
     myGameArea.start();
     myGamePiece.update();
     myGamePiece.gravity = 0.05;
@@ -80,11 +80,6 @@ function updateGameArea() {
     myGameArea.clear();
     myGamePiece.moveAngle = 0;
     myGamePiece.speed = 0;
-    if (myGameArea.keys && myGameArea.keys[37]) {myGamePiece.moveAngle = -1; }
-    if (myGameArea.keys && myGameArea.keys[39]) {myGamePiece.moveAngle = 1; }
-    if (myGameArea.keys && myGameArea.keys[38]) {myGamePiece.speed= 1.5; }
-    if (myGameArea.keys && myGameArea.keys[40]) {myGamePiece.speed= -1; }
-    //myGameArea
     if (myGameArea.keys && myGameArea.keys[37]) {myGameArea.moveAngle = 1; }
     if (myGameArea.keys && myGameArea.keys[39]) {myGameArea.moveAngle = -1; }
     if (myGameArea.keys && myGameArea.keys[38]) {myGameArea.speed= -1.5; }
@@ -102,7 +97,7 @@ html {
     text-align: center;
 }
 canvas {
-    background: url('https://dreek16designer.com/assets/road.gif');
+    background: url('https://dreek16designer.com/assets/road.png');
     background-size: cover;
     border: 1px solid #6f6f6f;
 }
