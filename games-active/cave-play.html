@@ -145,7 +145,7 @@ function updateGameArea() {
     var x, height, gap, minHeight, maxHeight, minGap, maxGap;
     for (i = 0; i < myObstacles.length; i += 1) {
         if (myGamePiece.crashWith(myObstacles[i])) {
-            return;
+            return die();
         } 
     }
     myGameArea.clear();
@@ -178,6 +178,9 @@ function everyinterval(n) {
 
 function accelerate(n) {
     myGamePiece.gravity = n;
+}
+function die() {
+    myGamePiece.hide();
 }
 </script>
 <br>
