@@ -8,4 +8,4 @@
    }
    alert("Incorrect password!");
    return false;
-   }
+}
