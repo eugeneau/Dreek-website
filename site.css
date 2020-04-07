@@ -23,6 +23,7 @@ a:link, a:visited {
   text-align: center;
   text-decoration: none;
   display: inline-block;
+  cursor: url('https://dreek16designer.com/gris.ico');
 }
 nav {
   background: url('nav.png');
