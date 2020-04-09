@@ -79,6 +79,15 @@ nav {
   background: url('gun.ico');
   background-size: cover;
 }
+.burger {
+  color: red;
+  width: 128;
+  height: 128;
+  cursor: pointer;
+  text-align: center;
+  background: url('gun.ico');
+  background-size: cover;
+}
 hr { 
   display: block;
   margin-top: 0.1em;
