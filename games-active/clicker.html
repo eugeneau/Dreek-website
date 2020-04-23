@@ -6,18 +6,21 @@ html {
  </style>
 <title>BurgerBrain</title>
 <h1>BurgerBrain</h1>
-<script type="text/javascript">
+<script type="text/javascript" nonce>
 var score = 0;
 
 function addScore() {
   score = score + 1;
   document.getElementById("score").innerHTML = score;
 }
+if (score = 100) {
+  alert('Keep clicking!');
+}
 </script>
-Score: <p id="score">0</p>
+Score: <a id="score">0</a>
 <div onclick="addScore()" onkeypress="addScore(100)">
-  <img src="https://dreek16designer.com/assets/burger.png" style="cursor: pointer;">
+  <img src="https://dreek16designer.com/assets/burger.png" style="cursor: pointer; user-select: none;">
 </div>
-<p>Click the burger!</p><hr>
-<h3>Upgrades:</h3>
-<pre>Currently not available.</pre>
+<h1>Click the burger!</h1><hr>
+<h2>Upgrades:</h2>
+<p>Currently not available.</p>
