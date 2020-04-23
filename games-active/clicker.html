@@ -7,9 +7,13 @@ html {
 <title>BurgerBrain</title>
 <h1>BurgerBrain</h1>
 <script type="text/javascript" nonce>
-var score = 0 = document.cookie;
+var score = 0;
 
+function save() {
+  score = document.cookie
+}
 function addScore() {
+  save();
   score = score + 1;
   document.getElementById("score").innerHTML = score;
 }
