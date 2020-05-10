@@ -103,5 +103,12 @@ hr {
   border-width: 1px;
 } 
 code {
+  color: white;
   float: left;
+}
+br {
+  user-select: none;
+}
+hr {
+  user-select: none;
 }
