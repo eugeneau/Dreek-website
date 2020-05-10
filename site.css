@@ -30,6 +30,7 @@ button {
   cursor: url('https://dreek16designer.com/cur.png');
 }
 nav {
+  padding: 15px;
   text-align: center;
   background: #3D3D3D;
   background-size: 16px;
