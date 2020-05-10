@@ -31,12 +31,11 @@ button {
 }
 nav {
   text-align: center;
-  background: DodgerBlue;
+  background: #3D3D3D;
   background-size: 16px;
   color: white;
   text-decoration: none;
   display: block;
-  padding: 25px;
   font-family: sans-serif;
 }
 .grisgame {
