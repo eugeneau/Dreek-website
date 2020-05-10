@@ -14,27 +14,27 @@
 <p>1. Start by making a gun 3d model, then import it into Unity. Import the standard assets and drag and drop the player controller into the scene, or make your own player FPS controller. If you are making a shooter game, put the gun model as a child of the player camera.</p>
 <p>2. Make a bullet prefab: for the sake of this tutorial, make a sphere, resize it appropriately and reset the Transform component. Drag and drop the object from your hierarchy into the project window to make a prefab. You can now delete the bullet from the scene. Make sure to save your changes (CTRL + S).</p>
 <p>3. Add a collider to the bullet prefab and add a rigidbody (gravity is optional, this will change depending on the mass value). Add a new script called Bullet: <code>
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class Bullet : MonoBehaviour
-{
-    public float Range = 2f;
-    public float speed = 20f;
-    public Rigidbody rb;
-    public Camera fpsCam;
-
-    void Start()
-    {
-        rb.velocity = transform.up * speed;
-        Destroy(gameObject, Range);
-    }
-    void OnCollisionEnter (Collision collision)
-    {
-
-    }
-}
+using System.Collections;<br>
+using System.Collections.Generic;<br>
+using UnityEngine;<br>
+<br>
+public class Bullet : MonoBehaviour<br>
+{<br>
+    public float Range = 2f;<br>
+    public float speed = 20f;<br>
+    public Rigidbody rb;<br>
+    public Camera fpsCam;<br>
+<br>
+    void Start()<br>
+    {<br>
+        rb.velocity = transform.up * speed;<br>
+        Destroy(gameObject, Range);<br>
+    }<br>
+    void OnCollisionEnter (Collision collision)<br>
+    {<br>
+<br>
+    }<br>
+}<br>
 </code>
 </p>
 <p>4. Let's start making our gun. Create a 3d model or download one and put it as a child of the player fps camera.</p>
