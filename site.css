@@ -2,7 +2,6 @@ html {
   text-align: center;
   background: #696969;
   background-size: 16px;
-  cursor: url('https://dreek16designer.com/cur.png'), auto;	
   font-family: "ARDESTINE";
 }
 .secretcss {
@@ -23,11 +22,9 @@ a:link, a:visited {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  cursor: url('https://dreek16designer.com/griscur.png');
 }
 button {
   text-align: center;
-  cursor: url('https://dreek16designer.com/cur.png');
 }
 nav {
   padding: 15px;
@@ -111,4 +108,8 @@ br {
 }
 hr {
   user-select: none;
+}
+img {
+  user-select: none;
+  cursor: url('https://dreek16designer.com/griscur.png');
 }
