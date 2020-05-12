@@ -10,8 +10,11 @@
 </nav>
 <h1>Make music for my games! You will be mentioned in the credits :)</h1>
 <p>Make music <a href ="https://musiclab.chromeexperiments.com/Song-Maker/">here</a>.</p><hr>
-<label for="link">Chrome Music Lab Link:</label>
-<input type="text" id="link" name="link"><br><br>
-<label for="name">Name in the Credits:</label>
-<input type="text" id="name" name="name"><br><br>
-<button onclick="mailto:dreek16designer@outlook.com?subject=link">Submit</button>
+ <form action="mailto:dreek16designer@outlook.com?subject=Someone posted a song on the music submitter! &message=#link" method="post" enctype="text/plain">
+ Name in the credits:<br>
+<input type="text" name="name"><br>
+Chrome music lab music link:<br>
+<input type="text" id="link" name="comment" size="50"><br><br>
+<input type="submit" value="Submit">
+<input type="reset" value="Reset">
+</form>
