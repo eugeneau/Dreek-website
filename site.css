@@ -54,6 +54,15 @@ nav {
   background: url('car.ico');
   background-size: cover;
 }
+.cargame {
+  color: blue;
+  width: 128;
+  height: 128;
+  cursor: pointer;
+  text-align: center;
+  background: url('moto.ico');
+  background-size: cover;
+}
 .stevegame {
   color: white;
   width: 128;
