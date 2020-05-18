@@ -18,7 +18,7 @@ h1 {
   color: white;
 }
 a:link, a:visited {
-  color: white;
+  color: blue;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -54,7 +54,7 @@ nav {
   background: url('car.ico');
   background-size: cover;
 }
-.cargame {
+.MotoBike {
   color: blue;
   width: 128;
   height: 128;
