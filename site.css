@@ -122,3 +122,10 @@ img {
   user-select: none;
   cursor: url('https://dreek16designer.com/griscur.png');
 }
+iframe:focus {
+  outline: none;
+}
+
+iframe[seamless] {
+  display: block;
+}
