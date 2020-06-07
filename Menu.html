@@ -7,4 +7,10 @@
 <a href="https://dreek16designer.com/videos" target="_blank"> Animations</a> |
 <a href="https://dreek16designer.com/games" target="_blank"> Games</a> |
 <a href="https://dreek16designer.com/about" target="_blank"> About</a> |
+  <p id="timeDisplay">12:00</p>
+  <script>
+    function displayDate() {
+      document.getElementById("timeDisplay").innerHTML = Date();
+    }
+    setTimeOut(displayDate, 1000);
 </nav>
