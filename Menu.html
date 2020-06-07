@@ -6,12 +6,15 @@
 </a>
 <script>
 function displayDate() {
-  document.getElementById("timeDisplay").innerHTML = Date();
+  var d = new Date();
+  document.getElementById("timeDisplayhour").innerHTML = d.getHours();
+  document.getElementById("timeDisplayMin").innerHTML = d.getMinutes();
 }
 setTimeout(displayDate, 1000);
 </script>
 <a href="https://dreek16designer.com/videos" target="_parent"> Animations</a> |
 <a href="https://dreek16designer.com/games" target="_parent"> Games</a> |
 <a href="https://dreek16designer.com/about" target="_parent"> About</a> |
-  <p id="timeDisplay">12:00</p>
+  <a id="timeDisplayHour"></a>
+  <a id="timeDisplayMin"></a>
 </nav>
