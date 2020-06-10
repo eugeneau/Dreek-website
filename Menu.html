@@ -7,7 +7,7 @@
 <script>
 function displayDate() {
   var d = new Date();
-  document.getElementById("timeDisplayHour").innerHTML = d.getHours();
+  document.getElementById("timeDisplayHour").innerHTML = d.getHours() + ":";
   document.getElementById("timeDisplayMin").innerHTML = d.getMinutes();
 }
 setInterval(displayDate, 1000);
@@ -15,6 +15,6 @@ setInterval(displayDate, 1000);
 <a href="https://dreek16designer.com/videos" target="_parent"> Animations</a> |
 <a href="https://dreek16designer.com/games" target="_parent"> Games</a> |
 <a href="https://dreek16designer.com/about" target="_parent"> About</a> |
-  <div id="timeDisplayHour"></div>
-  <div id="timeDisplayMin"></div>
+  <a id="timeDisplayHour"></a>
+  <a id="timeDisplayMin"></a>
 </nav>
