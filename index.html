@@ -6,9 +6,22 @@
 <title>WELCOME</title>
 <link rel="stylesheet" type="text/css" href="site.css">
 <br>
+  <script>
+function displayDate() {
+  var d = new Date();
+  document.getElementById("timeDisplayHour").innerHTML = d.getHours() + ":";
+  document.getElementById("timeDisplayMin").innerHTML = d.getMinutes() + ":";
+  document.getElementById("timeDisplaySec").innerHTML = d.getSeconds();
+}
+setInterval(displayDate, 1000);
+</script>
 <body>
-  <h1>DREEK16DESIGNER.COM</h1>
-  <p>Check out my games!</p>
-  <h1>News</h1>
+  <h1>Welcome to Dreek16designer.com!</h1>
+  <p>
+  <a id="timeDisplayHour"></a>
+  <a id="timeDisplayMin"></a>
+  <a id="timeDisplaySec"></a>
+  </p>
+  <h1>Cool Stuff :D</h1>
   Catch up on the latest stories from Jelopolous Weekly <a href="https://dreek16designer.com/JelopolousWeekly#bottom">here</a>.
 </head>
