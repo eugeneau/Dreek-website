@@ -1,9 +1,11 @@
-  function checkPassword() {
+var url = "https://example.com";
+
+function checkPassword() {
    var password = document.getElementById("passwordBox");
    var passwordText = password.value;
-   if(passwordText == "Mitrz") {
+   if(passwordText == password.correctAnswer) {
      alert("Correct");
-     window.location.assign("https://dreek16designer.com/auth");
+     window.location.assign(url);
      return true;
    }
    alert("Incorrect password");
