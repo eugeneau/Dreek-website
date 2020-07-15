@@ -1,6 +1,6 @@
 <?
-    $to = "dreek16designer@outlook.com";
-	$from = "dreek16@yahoo.com";
+    $to = "dreek16@yahoo.com";
+	$from = "dreek16designer.com";
 	$subject = "A message from Dreek16designer.com";
 	
 	$headers  = "From: $from\r\n";
@@ -16,6 +16,4 @@
 	EOF;
 
 	mail($to, $subject, $message, $headers);
-
-	echo "Successfully submitted!";
 ?>
