@@ -1,6 +1,6 @@
 html {
   text-align: center;
-  background: #696969;
+  background: #2D344F;
   background-size: 16px;
   font-family: "ARDESTINE";
 }
@@ -18,7 +18,7 @@ h1 {
   color: white;
 }
 a:link, a:visited {
-  color: white;
+  color: #00224B;
   text-align: center;
   text-decoration: none;
   display: inline-block;
