@@ -25,6 +25,7 @@ a:link, a:visited {
 }
 button {
   text-align: center;
+  cursor: pointer;
 }
 nav {
   padding: 15px;
