@@ -3,7 +3,6 @@ html {
   background: #327D48;
   color: #002D03;
   background-size: 16px;
-  font-family: "ARDESTINE";
 }
 h1 {
   color: white;
@@ -17,7 +16,6 @@ button {
   cursor: pointer;
 }
 nav {
-  padding: 15px;
   text-align: center;
   background: #393F6E;
   background-size: 16px;
