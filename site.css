@@ -1,18 +1,10 @@
 html {
   text-align: center;
   background: #327D48;
+  color: #002D03;
   background-size: 16px;
   font-family: "ARDESTINE";
 }
-.secretcss {
-  background: url('site.png');
-  background-size: 16px;
-  cursor: no-drop, auto;	
-  text-align: center;
-  border: 4px solid red;
-  font-family: "ARDESTINE";
-}
-
 h1 {
   text-align: center;
   color: white;
