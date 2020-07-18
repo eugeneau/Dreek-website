@@ -1,6 +1,6 @@
 html {
   text-align: center;
-  background: #2D344F;
+  background: #327D48;
   background-size: 16px;
   font-family: "ARDESTINE";
 }
@@ -30,7 +30,7 @@ button {
 nav {
   padding: 15px;
   text-align: center;
-  background: #3D3D3D;
+  background: #393F6E;
   background-size: 16px;
   color: white;
   text-decoration: none;
@@ -47,46 +47,6 @@ nav {
   background-size: cover;
   float: center;
 }
-.cargame {
-  color: red;
-  width: 128;
-  height: 128;
-  cursor: pointer;
-  text-align: center;
-  background: url('car.ico');
-  background-size: cover;
-  float: center;
-}
-.MotoBike {
-  color: blue;
-  width: 128;
-  height: 128;
-  cursor: pointer;
-  text-align: center;
-  background: url('moto.ico');
-  background-size: cover;
-  float: center;
-}
-.stevegame {
-  color: white;
-  width: 128;
-  height: 128;
-  cursor: pointer;
-  text-align: center;
-  background: url('favicon.ico');
-  background-size: cover;
-  float: center;
-}
-.cavegame {
-  color: black;
-  width: 128;
-  height: 128;
-  cursor: pointer;
-  text-align: center;
-  background: url('cave.ico');
-  background-size: cover;
-  float: center;
-}
 .gungame {
   color: red;
   width: 128;
@@ -94,16 +54,6 @@ nav {
   cursor: pointer;
   text-align: center;
   background: url('gun.ico');
-  background-size: cover;
-  float: center;
-}
-.burger {
-  color: red;
-  width: 128;
-  height: 128;
-  cursor: pointer;
-  text-align: center;
-  background: url('burger.ico');
   background-size: cover;
   float: center;
 }
