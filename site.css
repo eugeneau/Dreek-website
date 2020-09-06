@@ -1,6 +1,6 @@
 html {
-  padding: 25px;
-  background: grey;
+  padding: 50px;
+  background: #3B3B3B;
   background-size: 16px;
 }
 h1 {
@@ -10,7 +10,6 @@ button {
   cursor: pointer;
 }
 nav {
-  padding: 15px;
   color: white;
   text-decoration: none;
   display: block;
