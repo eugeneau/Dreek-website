@@ -1,16 +1,10 @@
 html {
   padding: 25px;
-  background: #327D48;
-  color: #002D03;
+  background: grey;
   background-size: 16px;
 }
 h1 {
-  color: white;
-}
-a:link, a:visited {
-  color: #00A6FF;
-  text-decoration: none;
-  display: inline-block;
+  color: Green;
 }
 button {
   cursor: pointer;
