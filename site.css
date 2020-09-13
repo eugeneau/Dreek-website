@@ -1,8 +1,10 @@
 html {
-  margin-left: 300px;
   padding: 5px;
   background: #3B3B3B;
   background-size: 16px;
+}
+body {
+  margin-left: 300px;
 }
 center {
   margin-left: 0px;
