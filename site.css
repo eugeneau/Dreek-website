@@ -1,17 +1,14 @@
 html {
   padding: 5px;
-  background: #3B3B3B;
+  background: #ffffff;
   background-size: 16px;
 }
-body {
+main {
   margin-left: 300px;
 }
 center {
   margin-left: 0px;
   text-align: center;
-}
-h1 {
-  color: Green;
 }
 button {
   cursor: pointer;
@@ -21,26 +18,6 @@ nav {
   text-decoration: none;
   display: block;
   font-family: sans-serif;
-}
-.grisgame {
-  color: green;
-  width: 128;
-  height: 128;
-  cursor: pointer;
-  text-align: center;
-  background: url('gris.ico');
-  background-size: cover;
-  float: center;
-}
-.gungame {
-  color: red;
-  width: 128;
-  height: 128;
-  cursor: pointer;
-  text-align: center;
-  background: url('gun.ico');
-  background-size: cover;
-  float: center;
 }
 hr { 
   display: block;
@@ -60,10 +37,6 @@ br {
 }
 hr {
   user-select: none;
-}
-img {
-  user-select: none;
-  cursor: url('https://dreek16designer.com/griscur.png');
 }
 iframe:focus {
   outline: none;
