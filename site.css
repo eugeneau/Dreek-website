@@ -1,12 +1,13 @@
 html {
   padding: 5px;
-  background: #31364D;
+  background: #1d1e21;
   background-size: 16px;
 }
 main {
-  background: #31364D;
+  font-family: cursive;
+  background: #1d1e21;
   margin-left: 300px;
-  color: #D6D6D6;
+  color: #b4ff009c;
 }
 center {
   margin-left: 0px;
