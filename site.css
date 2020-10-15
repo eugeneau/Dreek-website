@@ -1,11 +1,12 @@
 html {
   padding: 5px;
-  background: #2C3B4D;
+  background: #31364D;
   background-size: 16px;
 }
 main {
-  background: #2C3B4D;
+  background: #31364D;
   margin-left: 300px;
+  color: #ffffff;
 }
 center {
   margin-left: 0px;
