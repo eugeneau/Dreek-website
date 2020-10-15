@@ -4,6 +4,7 @@ html {
   background-size: 16px;
 }
 main {
+  background: #4B099C;
   margin-left: 300px;
 }
 center {
@@ -28,10 +29,6 @@ hr {
   border-style: inset;
   border-width: 1px;
 } 
-code {
-  color: white;
-  float: left;
-}
 br {
   user-select: none;
 }
