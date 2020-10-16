@@ -1,12 +1,13 @@
 html {
-  padding: 5px;
   background: #1d1e21;
   background-size: 16px;
 }
 header {
+  padding: 0px;
   background: #1B70E0;
 }
 main {
+  padding: 5px;
   font-family: cursive;
   background: #1d1e21;
   margin-left: 300px;
