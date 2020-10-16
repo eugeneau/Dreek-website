@@ -26,12 +26,10 @@ hr {
   display: block;
   margin-top: 0.2em;
   margin-bottom: 0.2em;
-  margin-left: 500px;
-  margin-right: 500px;
+  margin-left: 0px;
+  margin-right: 300px;
   border-style: inset;
   border-width: 1px;
-  color: yellow;
-  background-color: yellow;
 } 
 br {
   user-select: none;
