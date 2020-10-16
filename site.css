@@ -3,6 +3,9 @@ html {
   background: #1d1e21;
   background-size: 16px;
 }
+header {
+  background: #1B70E0;
+}
 main {
   font-family: cursive;
   background: #1d1e21;
