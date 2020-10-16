@@ -5,12 +5,14 @@ html {
 }
 header {
   background: #6996D6;
+}
+header-content {
   margin-left: 100px;
 }
 main {
   font-family: cursive;
   background: #1d1e21;
-  margin-left: 300px;
+  margin-left: 200px;
   color: #b4ff009c;
 }
 center {
@@ -31,7 +33,7 @@ hr {
   margin-top: 0.2em;
   margin-bottom: 0.2em;
   margin-left: 0px;
-  margin-right: 300px;
+  margin-right: 200px;
   border-style: inset;
   border-width: 1px;
 } 
