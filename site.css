@@ -10,9 +10,9 @@ header-content {
   margin-left: 100px;
 }
 main {
-  font-family: cursive;
   background: #1d1e21;
   margin-left: 200px;
+  margin-right: 200px;
   color: #b4ff009c;
 }
 center {
