@@ -3,6 +3,12 @@ html {
   background: #1d1e21;
   background-size: 16px;
 }
+h1 {
+  text-align: center;
+}
+h2 {
+  text-align: center;
+}
 header {
   background: #6996D6;
 }
@@ -33,7 +39,7 @@ hr {
   margin-top: 0.2em;
   margin-bottom: 0.2em;
   margin-left: 0px;
-  margin-right: 200px;
+  margin-right: 0px;
   border-style: inset;
   border-width: 1px;
 } 
