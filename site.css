@@ -55,6 +55,7 @@ button {
   cursor: pointer;
 }
 img {
+  vertical-align: middle;
   text-align: center;
 }
 hr { 
