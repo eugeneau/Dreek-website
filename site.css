@@ -1,6 +1,6 @@
 html {
   border: #005270;
-  background-image: "site.png";
+  background-image: url('site.png');
   background-size: 16px;
 }
 button {
@@ -42,7 +42,7 @@ header-content {
   margin-left: 100px;
 }
 main {
-  padding: 25px;
+  padding: 50px;
   background: #1d1e21;
   margin-left: 100px;
   margin-right: 100px;
