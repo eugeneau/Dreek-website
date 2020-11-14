@@ -1,6 +1,6 @@
 html {
   border: #005270;
-  background: "site.png";
+  background-image: "site.png";
   background-size: 16px;
 }
 button {
@@ -42,9 +42,10 @@ header-content {
   margin-left: 100px;
 }
 main {
+  padding: 25px;
   background: #1d1e21;
-  margin-left: 200px;
-  margin-right: 200px;
+  margin-left: 100px;
+  margin-right: 100px;
   color: #b4ff009c;
 }
 center {
