@@ -9,19 +9,19 @@ loginButton.addEventListener("click", (e) => {
 
     if (username === "Dreek16designer" && password === "Minecraft") {
         alert("You have successfully logged in.");
-        location.reload();
+        window.location.href = 'https://dreek16designer.com/secret/Mitrz/';
     } else {
         loginErrorMsg.style.opacity = 1;
     }
     if (username === "Pickles" && password === "pandapancakes") {
         alert("You have successfully logged in.");
-        location.reload();
+        window.location.href = 'https://dreek16designer.com/secret/Mitrz/';
     } else {
         loginErrorMsg.style.opacity = 1;
     }
     if (username === "GrenadeGuy2035" && password === "Minecraft") {
         alert("You have successfully logged in.");
-        location.reload();
+        window.location.href = 'https://dreek16designer.com/secret/Mitrz/';
     } else {
         loginErrorMsg.style.opacity = 1;
     }
