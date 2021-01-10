@@ -1,5 +1,6 @@
 html {
   background-image: url('site.png');
+  font-family: Arial, Helvetica, sans-serif;
   background-size: 128px;
 }
 button {
