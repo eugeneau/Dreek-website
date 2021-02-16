@@ -28,10 +28,8 @@ button:hover {
 }
 
 h1 {
-  color: #005500;
-  text-align: left;
-  font-style: italic;
-  background-color: #b3b3b3;
+  color: white;
+  font-style: bold;
 }
 h2 {
   color: white;
