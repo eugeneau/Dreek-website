@@ -3,6 +3,9 @@ html {
   font-family: Arial, Helvetica, sans-serif;
   background-size: 256px;
 }
+.cursive {
+  font-family: "Comic Sans MS", "Brush Script MT", cursive;
+}
 button {
   border: none;
   color: white;
